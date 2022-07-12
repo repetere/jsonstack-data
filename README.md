@@ -1,5 +1,5 @@
 # @modelx/data
-[![Coverage Status](https://coveralls.io/repos/github/repetere/modelx-data/badge.svg?branch=master)](https://coveralls.io/github/repetere/modelx-data?branch=master) ![Build, Test & Coverage](https://github.com/repetere/modelx-data/workflows/Build,%20Test%20&%20Coverage/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/repetere/jsonstack-data/badge.svg?branch=master)](https://coveralls.io/github/repetere/jsonstack-data?branch=master) ![Build, Test & Coverage](https://github.com/repetere/jsonstack-data/workflows/Build,%20Test%20&%20Coverage/badge.svg)
 
 quickly generate UMDs and other module types with rollup and typescript
 
