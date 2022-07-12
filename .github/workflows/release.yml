@@ -6,7 +6,7 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest  
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 18
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -34,7 +34,7 @@ jobs:
           npm ci
       - name: Test coverage
         run: |
-          jest --coverage --runInBand
+          jest --coverage --runInBand --ci --no-cache
       - name: Coveralls Parallel
         uses: coverallsapp/github-action@master
         with:
@@ -49,7 +49,9 @@ jobs:
           parallel-finished: true
       - name: build files, docs
         run: |
-          tsc && rollup -c && typedoc && sitedown manual/ -b docs/manual
+          npm run compile
+          npm run build 
+        # tsc && rollup -c && typedoc && sitedown manual/ -b docs/manual
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -5,6 +5,11 @@ import { default as PD, } from 'probability-distributions';
  * @memberOf ml
  */
 export class ReinforcedLearningBase {
+    bounds;
+    getBound;
+    last_selected;
+    total_reward;
+    iteration;
     /**
      * base class for reinforced learning
      * @param {Object} [options={}]
@@ -51,6 +56,9 @@ export class ReinforcedLearningBase {
  * @memberOf ml
  */
 export class UpperConfidenceBound extends ReinforcedLearningBase {
+    numbers_of_selections;
+    sums_of_rewards;
+    bounds;
     /**
      * creates a new instance of the Upper confidence bound(UCB) algorithm. UCB is based on the principle of optimism in the face of uncertainty, which is to choose your actions as if the environment (in this case bandit) is as nice as is plausibly possible
      * @see {@link http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/}

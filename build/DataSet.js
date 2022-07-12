@@ -23,39 +23,22 @@ const transformConfigMap = {
  * @memberOf preprocessing
  */
 export class DataSet {
-    /**
-     * creates a new raw data instance for preprocessing data for machine learning
-     * @example
-     * const dataset = new ms.DataSet(csvData);
-     * @param {Object[]} dataset
-     * @returns {this}
-     */
-    constructor(data = [], options = {}) {
-        this.config = Object.assign({
-            debug: true,
-        }, options);
-        this.data = [...data,];
-        this.labels = new Map();
-        this.encoders = new Map();
-        this.scalers = new Map();
-        this.selectColumns = DataSet.selectColumns;
-        this.columnArray = DataSet.columnArray;
-        this.encodeObject = DataSet.encodeObject;
-        this.oneHotEncoder = DataSet.oneHotEncoder;
-        this.oneHotDecoder = DataSet.oneHotDecoder;
-        this.columnMatrix = DataSet.columnMatrix;
-        this.reverseColumnMatrix = DataSet.reverseColumnMatrix;
-        this.reverseColumnVector = DataSet.reverseColumnVector;
-        this.getTransforms = DataSet.getTransforms;
-        if (this.config.labels || this.config.encoders || this.config.scalers) {
-            this.importFeatures({
-                labels: this.config.labels,
-                encoders: this.config.encoders,
-                scalers: this.config.scalers,
-            });
-        }
-        return this;
-    }
+    config;
+    data;
+    labels;
+    encoders;
+    scalers;
+    selectColumns;
+    columnArray;
+    encodeObject;
+    oneHotEncoder;
+    oneHotDecoder;
+    columnMatrix;
+    reverseColumnMatrix;
+    reverseColumnVector;
+    getTransforms;
+    static encoders;
+    static data;
     /**
      * Allows for fit transform short hand notation
      * @example
@@ -441,6 +424,39 @@ export class DataSet {
             default:
                 return 1;
         }
+    }
+    /**
+     * creates a new raw data instance for preprocessing data for machine learning
+     * @example
+     * const dataset = new ms.DataSet(csvData);
+     * @param {Object[]} dataset
+     * @returns {this}
+     */
+    constructor(data = [], options = {}) {
+        this.config = Object.assign({
+            debug: true,
+        }, options);
+        this.data = [...data,];
+        this.labels = new Map();
+        this.encoders = new Map();
+        this.scalers = new Map();
+        this.selectColumns = DataSet.selectColumns;
+        this.columnArray = DataSet.columnArray;
+        this.encodeObject = DataSet.encodeObject;
+        this.oneHotEncoder = DataSet.oneHotEncoder;
+        this.oneHotDecoder = DataSet.oneHotDecoder;
+        this.columnMatrix = DataSet.columnMatrix;
+        this.reverseColumnMatrix = DataSet.reverseColumnMatrix;
+        this.reverseColumnVector = DataSet.reverseColumnVector;
+        this.getTransforms = DataSet.getTransforms;
+        if (this.config.labels || this.config.encoders || this.config.scalers) {
+            this.importFeatures({
+                labels: this.config.labels,
+                encoders: this.config.encoders,
+                scalers: this.config.scalers,
+            });
+        }
+        return this;
     }
     /**
      * returns Object of all encoders and scalers

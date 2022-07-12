@@ -12,6 +12,16 @@ import { DataSet, } from './DataSet';
  * @memberOf nlp
  */
 export class ColumnVectorizer {
+    data;
+    tokens;
+    vectors;
+    wordMap;
+    wordCountMap;
+    maxFeatures;
+    sortedWordCount;
+    limitedFeatures;
+    matrix;
+    replacer;
     /**
      * creates a new instance for classifying text data for machine learning
      * @example

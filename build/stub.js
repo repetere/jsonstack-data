@@ -1,3 +1,4 @@
+//@ts-ignore
 import stemmer from 'stemmer';
 const natural = {
     PorterStemmer: {

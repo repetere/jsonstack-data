@@ -1,518 +1,207 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@modelx/data</title>
-	<meta name="description" content="Documentation for @modelx/data">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">@modelx/data</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>@modelx/data</h1>
-		</div>
-	</div>
-</header>
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@jsonstack/data</title><meta name="description" content="Documentation for @jsonstack/data"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@jsonstack/data</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
 <div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#modelxdata" id="modelxdata" style="color: inherit; text-decoration: none;">
-					<h1>@modelx/data</h1>
-				</a>
-				<p><a href="https://coveralls.io/github/repetere/modelx-data?branch=master"><img src="https://coveralls.io/repos/github/repetere/modelx-data/badge.svg?branch=master" alt="Coverage Status"></a> <img src="https://github.com/repetere/modelx-data/workflows/Build,%20Test%20&%20Coverage/badge.svg" alt="Build, Test &amp; Coverage"></p>
-				<p>quickly generate UMDs and other module types with rollup and typescript</p>
-				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
-					<h2>Getting started</h2>
-				</a>
-				<p>Clone the repo and drop your module in the src directory.</p>
-				<pre><code class="language-shell"><span style="color: #008000"># Install Prerequisites</span>
-<span style="color: #000000">$ npm install rollup typedoc jest sitedown --g</span>
-</code></pre>
-				<a href="#basic-usage" id="basic-usage" style="color: inherit; text-decoration: none;">
-					<h2>Basic Usage</h2>
-				</a>
-				<pre><code class="language-shell"><span style="color: #000000">$ npm run build </span><span style="color: #008000">#builds type declarations, created bundled artifacts with rollup and generates documenation</span>
-</code></pre>
-				<a href="#description" id="description" style="color: inherit; text-decoration: none;">
-					<h2>Description</h2>
-				</a>
-				<p><strong>ModelScript</strong> is a javascript module with simple and efficient tools for data mining and data analysis in JavaScript. <strong>ModelScript</strong> can be used with <a href="https://github.com/mljs/ml">ML.js</a>, <a href="https://github.com/StratoDem/pandas-js">pandas-js</a>, and <a href="https://github.com/numjs/numjs">numjs</a>, to approximate the equivalent R/Python tool chain in JavaScript.</p>
-				<p>In Python, data preparation is typically done in a DataFrame, ModelScript encourages a more R like workflow where the data preparation is in it&#39;s native structure.</p>
-				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-					<h3>Installation</h3>
-				</a>
-				<pre><code class="language-sh"><span style="color: #000000">$ npm i modelscript</span>
-</code></pre>
-				<a href="#full-documentation" id="full-documentation" style="color: inherit; text-decoration: none;">
-					<h3><a href="https://github.com/repetere/modelscript/blob/master/docs/api.md">Full Documentation</a></h3>
-				</a>
-				<a href="#usage-basic" id="usage-basic" style="color: inherit; text-decoration: none;">
-					<h3>Usage (basic)</h3>
-				</a>
-				<p>ModelScript is an EcmaScript module and designed to be imported in an ES2015+ environment. In order to use in older environment, please use <code>const modelscript = require(&#39;modelscript/build/modelscript.cjs.js&#39;)</code> for older versions of node and <code>&lt;script type=&quot;text/javascript&quot; src=&quot;.../path/to/.../modelscript/build/modelscript.umd.js&quot;/&gt;</code></p>
-				<pre><code class="language-javascript"><span style="color: #A31515">&quot;modelscript&quot;</span><span style="color: #000000"> : {</span>
-<span style="color: #000000">  </span><span style="color: #001080">ml:</span><span style="color: #000000">{ </span><span style="color: #008000">//see https://github.com/mljs/ml</span>
-<span style="color: #000000">    UpperConfidenceBound </span><span style="color: #001080">[Class: UpperConfidenceBound]{ </span><span style="color: #008000">// Implementation of the Upper Confidence Bound algorithm</span>
-<span style="color: #001080">      predict(), </span><span style="color: #008000">//returns next action based off of the upper confidence bound</span>
-<span style="color: #001080">      learn(), </span><span style="color: #008000">//single step training method</span>
-<span style="color: #001080">      train(), </span><span style="color: #008000">//training method for upper confidence bound calculations</span>
-<span style="color: #001080">    },</span>
-<span style="color: #001080">    ThompsonSampling [Class: ThompsonSampling]{ </span><span style="color: #008000">//Implementation of the Thompson Sampling algorithm</span>
-<span style="color: #001080">      predict(), </span><span style="color: #008000">//returns next action based off of the thompson sampling</span>
-<span style="color: #001080">      learn(), </span><span style="color: #008000">//single step training method</span>
-<span style="color: #001080">      train(), </span><span style="color: #008000">//training method for thompson sampling calculations</span>
-<span style="color: #001080">    },</span>
-<span style="color: #001080">  },</span>
-<span style="color: #001080">  nlp:</span><span style="color: #000000">{ </span><span style="color: #008000">//see https://github.com/NaturalNode/natural</span>
-<span style="color: #000000">    ColumnVectorizer </span><span style="color: #001080">[Class: ColumnVectorizer]{ </span><span style="color: #008000">//class creating sparse matrices from a corpus</span>
-<span style="color: #001080">      get_tokens(), </span><span style="color: #008000">// Returns a distinct array of all tokens after fit_transform</span>
-<span style="color: #001080">      get_vector_array(), </span><span style="color: #008000">//Returns array of arrays of strings for dependent features from sparse matrix word map</span>
-<span style="color: #001080">      fit_transform(options), </span><span style="color: #008000">//Fits and transforms data by creating column vectors (a sparse matrix where each row has every word in the corpus as a column and the count of appearances in the corpus)</span>
-<span style="color: #001080">      get_limited_features(options), </span><span style="color: #008000">//Returns limited sets of dependent features or all dependent features sorted by word count</span>
-<span style="color: #001080">      evaluateString(testString), </span><span style="color: #008000">//returns word map with counts</span>
-<span style="color: #001080">      evaluate(testString), </span><span style="color: #008000">//returns new matrix of words with counts in columns</span>
-<span style="color: #001080">    }</span>
-<span style="color: #001080">  },</span>
-<span style="color: #001080">  csv:</span><span style="color: #000000">{</span>
-<span style="color: #000000">    </span><span style="color: #001080">loadCSV:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">loadCSV</span><span style="color: #000000">], </span><span style="color: #008000">//asynchronously loads CSVs, either a filepath or a remote URI</span>
-<span style="color: #000000">    </span><span style="color: #001080">loadTSV:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">loadTSV</span><span style="color: #000000">], </span><span style="color: #008000">//asynchronously loads TSVs, either a filepath or a remote URI</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">  </span><span style="color: #001080">model_selection:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">train_test_split:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">train_test_split</span><span style="color: #000000">], </span><span style="color: #008000">// splits data into training and testing sets</span>
-<span style="color: #000000">    </span><span style="color: #001080">cross_validation_split:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">kfolds</span><span style="color: #000000">], </span><span style="color: #008000">//splits data into k-folds</span>
-<span style="color: #000000">    </span><span style="color: #001080">cross_validate_score:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">cross_validate_score</span><span style="color: #000000">],</span><span style="color: #008000">//test model variance and bias</span>
-<span style="color: #000000">    </span><span style="color: #001080">grid_search:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">grid_search</span><span style="color: #000000">], </span><span style="color: #008000">// tune models with grid search for optimal performance</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">  DataSet </span><span style="color: #001080">[Class: DataSet]:</span><span style="color: #000000"> { </span><span style="color: #008000">//class for manipulating an array of objects (typically from CSV data)</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnMatrix</span><span style="color: #000000">(</span><span style="color: #001080">vectors</span><span style="color: #000000">), </span><span style="color: #008000">//returns a matrix of values by combining column arrays into a matrix</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnArray</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new array of a selected column from an array of objects, can filter, scale and replace values</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnReplace</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new array of a selected column from an array of objects and replaces empty values, encodes values and scales values</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnScale</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new array of scaled values which can be reverse (descaled). The scaling transformations are stored on the DataSet</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnDescale</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - Returns a new array of descaled values</span>
-<span style="color: #000000">    </span><span style="color: #795E26">selectColumns</span><span style="color: #000000">(</span><span style="color: #001080">columns</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">//returns a list of objects with only selected columns as properties</span>
-<span style="color: #000000">    </span><span style="color: #795E26">labelEncoder</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new array and label encodes a selected column</span>
-<span style="color: #000000">    </span><span style="color: #795E26">labelDecode</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new array and decodes an encoded column back to the original array values</span>
-<span style="color: #000000">    </span><span style="color: #795E26">oneHotEncoder</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new object of one hot encoded values</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnMatrix</span><span style="color: #000000">(</span><span style="color: #001080">columnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a matrix of values from multiple columns</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnReducer</span><span style="color: #000000">(</span><span style="color: #001080">newColumnName</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new array of a selected column that is passed a reducer function, this is used to create new columns for aggregate statistics</span>
-<span style="color: #000000">    </span><span style="color: #795E26">columnMerge</span><span style="color: #000000">(</span><span style="color: #001080">name</span><span style="color: #000000">, </span><span style="color: #001080">data</span><span style="color: #000000">), </span><span style="color: #008000">// - returns a new column that is merged onto the data set</span>
-<span style="color: #000000">    </span><span style="color: #795E26">filterColumn</span><span style="color: #000000">(</span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - filtered rows of data,</span>
-<span style="color: #000000">    </span><span style="color: #795E26">fitColumns</span><span style="color: #000000">(</span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// - mutates data property of DataSet by replacing multiple columns in a single command</span>
-<span style="color: #000000">    static </span><span style="color: #795E26">reverseColumnMatrix</span><span style="color: #000000">(</span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// returns an array of objects by applying labels to matrix of columns</span>
-<span style="color: #000000">    static </span><span style="color: #795E26">reverseColumnVector</span><span style="color: #000000">(</span><span style="color: #001080">options</span><span style="color: #000000">), </span><span style="color: #008000">// returns an array of objects by applying labels to column vector</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">  </span><span style="color: #001080">calc:</span><span style="color: #000000">{</span>
-<span style="color: #000000">    </span><span style="color: #001080">getTransactions:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000"> </span><span style="color: #001080">getTransactions</span><span style="color: #000000">], </span><span style="color: #008000">// Formats an array of transactions into a sparse matrix like format for Apriori/Eclat</span>
-<span style="color: #000000">    </span><span style="color: #001080">assocationRuleLearning:</span><span style="color: #000000"> [</span><span style="color: #001080">async</span><span style="color: #000000"> </span><span style="color: #267F99">Function</span><span style="color: #000000"> </span><span style="color: #001080">assocationRuleLearning</span><span style="color: #000000">], </span><span style="color: #008000">// returns association rule learning results using apriori</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">  </span><span style="color: #001080">util:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">range:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">], </span><span style="color: #008000">// range helper function</span>
-<span style="color: #000000">    </span><span style="color: #001080">rangeRight:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">], </span><span style="color: #008000">//range right helper function</span>
-<span style="color: #000000">    </span><span style="color: #001080">scale:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">scale</span><span style="color: #000000">], </span><span style="color: #008000">//scale / normalize data</span>
-<span style="color: #000000">    </span><span style="color: #001080">avg:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">arithmeticMean</span><span style="color: #000000">], </span><span style="color: #008000">// aritmatic mean</span>
-<span style="color: #000000">    </span><span style="color: #001080">mean:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">arithmeticMean</span><span style="color: #000000">], </span><span style="color: #008000">// aritmatic mean</span>
-<span style="color: #000000">    </span><span style="color: #001080">sum:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">sum</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">max:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">max</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">min:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">min</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">sd:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">standardDeviation</span><span style="color: #000000">], </span><span style="color: #008000">// standard deviation</span>
-<span style="color: #000000">    </span><span style="color: #001080">StandardScalerTransforms:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">StandardScalerTransforms</span><span style="color: #000000">], </span><span style="color: #008000">// returns two functions that can standard scale new inputs and reverse scale new outputs</span>
-<span style="color: #000000">    </span><span style="color: #001080">MinMaxScalerTransforms:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">MinMaxScalerTransforms</span><span style="color: #000000">], </span><span style="color: #008000">// returns two functions that can mix max scale new inputs and reverse scale new outputs</span>
-<span style="color: #000000">    </span><span style="color: #001080">StandardScaler:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">StandardScaler</span><span style="color: #000000">], </span><span style="color: #008000">// standardization (z-scores)</span>
-<span style="color: #000000">    </span><span style="color: #001080">MinMaxScaler:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">MinMaxScaler</span><span style="color: #000000">], </span><span style="color: #008000">// min-max scaling</span>
-<span style="color: #000000">    </span><span style="color: #001080">ExpScaler:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">ExpScaler</span><span style="color: #000000">], </span><span style="color: #008000">// exponent scaling</span>
-<span style="color: #000000">    </span><span style="color: #001080">LogScaler:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">LogScaler</span><span style="color: #000000">], </span><span style="color: #008000">// natual log scaling</span>
-<span style="color: #000000">    </span><span style="color: #001080">squaredDifference:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">squaredDifference</span><span style="color: #000000">], </span><span style="color: #008000">// Returns an array of the squared different of two arrays</span>
-<span style="color: #000000">    </span><span style="color: #001080">standardError:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">standardError</span><span style="color: #000000">], </span><span style="color: #008000">// The standard error of the estimate is a measure of the accuracy of predictions made with a regression line</span>
-<span style="color: #000000">    </span><span style="color: #001080">coefficientOfDetermination:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">coefficientOfDetermination</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">adjustedCoefficentOfDetermination:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">adjustedCoefficentOfDetermination</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">adjustedRSquared:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">adjustedCoefficentOfDetermination</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">rBarSquared:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">adjustedCoefficentOfDetermination</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">r:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">coefficientOfCorrelation</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">coefficientOfCorrelation:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">coefficientOfCorrelation</span><span style="color: #000000">],</span>
-<span style="color: #000000">    </span><span style="color: #001080">rSquared:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">rSquared</span><span style="color: #000000">], </span><span style="color: #008000">//r^2</span>
-<span style="color: #000000">    </span><span style="color: #001080">pivotVector:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">pivotVector</span><span style="color: #000000">], </span><span style="color: #008000">// returns an array of vectors as an array of arrays</span>
-<span style="color: #000000">    </span><span style="color: #001080">pivotArrays:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">pivotArrays</span><span style="color: #000000">], </span><span style="color: #008000">// returns a matrix of values by combining arrays into a matrix</span>
-<span style="color: #000000">    </span><span style="color: #001080">standardScore:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">standardScore</span><span style="color: #000000">], </span><span style="color: #008000">// Calculates the z score of each value in the sample, relative to the sample mean and standard deviation.</span>
-<span style="color: #000000">    </span><span style="color: #001080">zScore:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">standardScore</span><span style="color: #000000">], </span><span style="color: #008000">// alias for standardScore.</span>
-<span style="color: #000000">    </span><span style="color: #001080">approximateZPercentile:</span><span style="color: #000000"> [</span><span style="color: #267F99">Function</span><span style="color: #000000">: </span><span style="color: #001080">approximateZPercentile</span><span style="color: #000000">], </span><span style="color: #008000">// approximate the p value from a z score</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">  </span><span style="color: #001080">preprocessing:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">DataSet:</span><span style="color: #000000"> [</span><span style="color: #001080">Class</span><span style="color: #000000"> </span><span style="color: #001080">DataSet</span><span style="color: #000000">],</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">}</span>
-</code></pre>
-				<a href="#examples-javascript--python--r" id="examples-javascript--python--r" style="color: inherit; text-decoration: none;">
-					<h3>Examples (JavaScript / Python / R)</h3>
-				</a>
-				<a href="#loading-csv-data" id="loading-csv-data" style="color: inherit; text-decoration: none;">
-					<h4>Loading CSV Data</h4>
-				</a>
-				<a href="#javascript" id="javascript" style="color: inherit; text-decoration: none;">
-					<h5>Javascript</h5>
-				</a>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">jsk</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;modelscript&#039;</span><span style="color: #000000">;</span>
-<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">dataset</span><span style="color: #000000">;</span>
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>@jsonstack/data</h2></div>
+<div class="tsd-panel tsd-typography">
+<a href="#modelxdata" id="modelxdata" style="color: inherit; text-decoration: none;">
+  <h1>@modelx/data</h1>
+</a>
+<p><a href="https://coveralls.io/github/repetere/modelx-data?branch=master"><img src="https://coveralls.io/repos/github/repetere/modelx-data/badge.svg?branch=master" alt="Coverage Status"></a> <img src="https://github.com/repetere/modelx-data/workflows/Build,%20Test%20&%20Coverage/badge.svg" alt="Build, Test &amp; Coverage"></p>
+<p>quickly generate UMDs and other module types with rollup and typescript</p>
 
-<span style="color: #008000">//In JavaScript, by default most I/O Operations are asynchronous, see the notes section for more</span>
-<span style="color: #001080">ms</span><span style="color: #000000">.</span><span style="color: #795E26">loadCSV</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/some/file/path.csv&#039;</span><span style="color: #000000">)</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #001080">csvData</span><span style="color: #0000FF">=&gt;</span><span style="color: #000000">{</span>
-<span style="color: #000000">    </span><span style="color: #001080">dataset</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">ms</span><span style="color: #000000">.</span><span style="color: #795E26">DataSet</span><span style="color: #000000">(</span><span style="color: #001080">csvData</span><span style="color: #000000">);</span>
-<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">({</span><span style="color: #001080">csvData</span><span style="color: #000000">});</span>
-<span style="color: #000000">    </span><span style="color: #008000">/* csvData [{</span>
-<span style="color: #008000">      &#039;Country&#039;: &#039;Brazil&#039;,</span>
-<span style="color: #008000">      &#039;Age&#039;: &#039;44&#039;,</span>
-<span style="color: #008000">      &#039;Salary&#039;: &#039;72000&#039;,</span>
-<span style="color: #008000">      &#039;Purchased&#039;: &#039;N&#039;,</span>
-<span style="color: #008000">    },</span>
-<span style="color: #008000">    ...</span>
-<span style="color: #008000">    {</span>
-<span style="color: #008000">      &#039;Country&#039;: &#039;Mexico&#039;,</span>
-<span style="color: #008000">      &#039;Age&#039;: &#039;27&#039;,</span>
-<span style="color: #008000">      &#039;Salary&#039;: &#039;48000&#039;,</span>
-<span style="color: #008000">      &#039;Purchased&#039;: &#039;Yes&#039;,</span>
-<span style="color: #008000">    }] */</span>
-<span style="color: #000000">  })</span>
-<span style="color: #000000">  .</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">);</span>
+<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+  <h2>Getting started</h2>
+</a>
+<p>Clone the repo and drop your module in the src directory.</p>
+<pre><code class="language-shell"><span class="hl-0"># Install Prerequisites</span><br/><span class="hl-1">$ npm install rollup typedoc jest sitedown --g</span>
+</code></pre>
 
-<span style="color: #008000">// or from URL</span>
-<span style="color: #001080">ms</span><span style="color: #000000">.</span><span style="color: #795E26">loadCSV</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;https://example.com/some/file/path.csv&#039;</span><span style="color: #000000">)</span>
+<a href="#basic-usage" id="basic-usage" style="color: inherit; text-decoration: none;">
+  <h2>Basic Usage</h2>
+</a>
+<pre><code class="language-shell"><span class="hl-1">$ npm run build </span><span class="hl-0">#builds type declarations, created bundled artifacts with rollup and generates documenation</span>
+</code></pre>
 
-</code></pre>
-				<a href="#python" id="python" style="color: inherit; text-decoration: none;">
-					<h5>Python</h5>
-				</a>
-				<pre><code class="language-python"><span style="color: #AF00DB">import</span><span style="color: #000000"> pandas </span><span style="color: #AF00DB">as</span><span style="color: #000000"> pd</span>
+<a href="#description" id="description" style="color: inherit; text-decoration: none;">
+  <h2>Description</h2>
+</a>
+<p><strong>ModelScript</strong> is a javascript module with simple and efficient tools for data mining and data analysis in JavaScript. <strong>ModelScript</strong> can be used with <a href="https://github.com/mljs/ml">ML.js</a>, <a href="https://github.com/StratoDem/pandas-js">pandas-js</a>, and <a href="https://github.com/numjs/numjs">numjs</a>, to approximate the equivalent R/Python tool chain in JavaScript.</p>
+<p>In Python, data preparation is typically done in a DataFrame, ModelScript encourages a more R like workflow where the data preparation is in it&#39;s native structure.</p>
 
-<span style="color: #008000">#Importing the dataset</span>
-<span style="color: #000000">dataset = pd.read_csv(</span><span style="color: #A31515">&#039;/some/file/path.csv&#039;</span><span style="color: #000000">)</span>
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h3>Installation</h3>
+</a>
+<pre><code class="language-sh"><span class="hl-1">$ npm i modelscript</span>
 </code></pre>
-				<a href="#r" id="r" style="color: inherit; text-decoration: none;">
-					<h5>R</h5>
-				</a>
-				<pre><code class="language-R"><span style="color: #008000"># Importingd the dataset</span>
-<span style="color: #001080">dataset</span><span style="color: #000000"> = </span><span style="color: #795E26">read.csv</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Data.csv&#039;</span><span style="color: #000000">)</span>
-</code></pre>
-				<a href="#handling-missing-data" id="handling-missing-data" style="color: inherit; text-decoration: none;">
-					<h4>Handling Missing Data</h4>
-				</a>
-				<a href="#javascript-1" id="javascript-1" style="color: inherit; text-decoration: none;">
-					<h5>Javascript</h5>
-				</a>
-				<pre><code class="language-javascript"><span style="color: #008000">//column Array returns column of data by name</span>
-<span style="color: #008000">// [ &#039;44&#039;,&#039;27&#039;,&#039;30&#039;,&#039;38&#039;,&#039;40&#039;,&#039;35&#039;,&#039;&#039;,&#039;48&#039;,&#039;50&#039;, &#039;37&#039; ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">OringalAgeColumn</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">columnArray</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Age&#039;</span><span style="color: #000000">); </span>
 
-<span style="color: #008000">//column Replace returns new Array with replaced missing data</span>
-<span style="color: #008000">//[ &#039;44&#039;,&#039;27&#039;,&#039;30&#039;,&#039;38&#039;,&#039;40&#039;,&#039;35&#039;,38.77777777777778,&#039;48&#039;,&#039;50&#039;,&#039;37&#039; ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">ReplacedAgeMeanColumn</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">columnReplace</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Age&#039;</span><span style="color: #000000">,{</span><span style="color: #001080">strategy:</span><span style="color: #A31515">&#039;mean&#039;</span><span style="color: #000000">}); </span>
+<a href="#full-documentation" id="full-documentation" style="color: inherit; text-decoration: none;">
+  <h3><a href="https://github.com/repetere/modelscript/blob/master/docs/api.md">Full Documentation</a></h3>
+</a>
 
-<span style="color: #008000">//fit Columns, mutates dataset</span>
-<span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">fitColumns</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">columns:</span><span style="color: #000000">[{</span><span style="color: #001080">name:</span><span style="color: #A31515">&#039;Age&#039;</span><span style="color: #000000">,</span><span style="color: #001080">strategy:</span><span style="color: #A31515">&#039;mean&#039;</span><span style="color: #000000">}]</span>
-<span style="color: #000000">});</span>
-<span style="color: #008000">/*</span>
-<span style="color: #008000">dataset</span>
-<span style="color: #008000">class DataSet</span>
-<span style="color: #008000">  data:[</span>
-<span style="color: #008000">    {</span>
-<span style="color: #008000">      &#039;Country&#039;: &#039;Brazil&#039;,</span>
-<span style="color: #008000">      &#039;Age&#039;: &#039;38.77777777777778&#039;,</span>
-<span style="color: #008000">      &#039;Salary&#039;: &#039;72000&#039;,</span>
-<span style="color: #008000">      &#039;Purchased&#039;: &#039;N&#039;,</span>
-<span style="color: #008000">    }</span>
-<span style="color: #008000">    ...</span>
-<span style="color: #008000">  ]</span>
-<span style="color: #008000">*/</span>
+<a href="#usage-basic" id="usage-basic" style="color: inherit; text-decoration: none;">
+  <h3>Usage (basic)</h3>
+</a>
+<p>ModelScript is an EcmaScript module and designed to be imported in an ES2015+ environment. In order to use in older environment, please use <code>const modelscript = require(&#39;modelscript/build/modelscript.cjs.js&#39;)</code> for older versions of node and <code>&lt;script type=&quot;text/javascript&quot; src=&quot;.../path/to/.../modelscript/build/modelscript.umd.js&quot;/&gt;</code></p>
+<pre><code class="language-javascript"><span class="hl-2">&quot;modelscript&quot;</span><span class="hl-1"> : {</span><br/><span class="hl-1">  </span><span class="hl-3">ml:</span><span class="hl-1">{ </span><span class="hl-0">//see https://github.com/mljs/ml</span><br/><span class="hl-1">    UpperConfidenceBound </span><span class="hl-3">[Class: UpperConfidenceBound]{ </span><span class="hl-0">// Implementation of the Upper Confidence Bound algorithm</span><br/><span class="hl-3">      predict(), </span><span class="hl-0">//returns next action based off of the upper confidence bound</span><br/><span class="hl-3">      learn(), </span><span class="hl-0">//single step training method</span><br/><span class="hl-3">      train(), </span><span class="hl-0">//training method for upper confidence bound calculations</span><br/><span class="hl-3">    },</span><br/><span class="hl-3">    ThompsonSampling [Class: ThompsonSampling]{ </span><span class="hl-0">//Implementation of the Thompson Sampling algorithm</span><br/><span class="hl-3">      predict(), </span><span class="hl-0">//returns next action based off of the thompson sampling</span><br/><span class="hl-3">      learn(), </span><span class="hl-0">//single step training method</span><br/><span class="hl-3">      train(), </span><span class="hl-0">//training method for thompson sampling calculations</span><br/><span class="hl-3">    },</span><br/><span class="hl-3">  },</span><br/><span class="hl-3">  nlp:</span><span class="hl-1">{ </span><span class="hl-0">//see https://github.com/NaturalNode/natural</span><br/><span class="hl-1">    ColumnVectorizer </span><span class="hl-3">[Class: ColumnVectorizer]{ </span><span class="hl-0">//class creating sparse matrices from a corpus</span><br/><span class="hl-3">      get_tokens(), </span><span class="hl-0">// Returns a distinct array of all tokens after fit_transform</span><br/><span class="hl-3">      get_vector_array(), </span><span class="hl-0">//Returns array of arrays of strings for dependent features from sparse matrix word map</span><br/><span class="hl-3">      fit_transform(options), </span><span class="hl-0">//Fits and transforms data by creating column vectors (a sparse matrix where each row has every word in the corpus as a column and the count of appearances in the corpus)</span><br/><span class="hl-3">      get_limited_features(options), </span><span class="hl-0">//Returns limited sets of dependent features or all dependent features sorted by word count</span><br/><span class="hl-3">      evaluateString(testString), </span><span class="hl-0">//returns word map with counts</span><br/><span class="hl-3">      evaluate(testString), </span><span class="hl-0">//returns new matrix of words with counts in columns</span><br/><span class="hl-3">    }</span><br/><span class="hl-3">  },</span><br/><span class="hl-3">  csv:</span><span class="hl-1">{</span><br/><span class="hl-1">    </span><span class="hl-3">loadCSV:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">loadCSV</span><span class="hl-1">], </span><span class="hl-0">//asynchronously loads CSVs, either a filepath or a remote URI</span><br/><span class="hl-1">    </span><span class="hl-3">loadTSV:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">loadTSV</span><span class="hl-1">], </span><span class="hl-0">//asynchronously loads TSVs, either a filepath or a remote URI</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-3">model_selection:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">train_test_split:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">train_test_split</span><span class="hl-1">], </span><span class="hl-0">// splits data into training and testing sets</span><br/><span class="hl-1">    </span><span class="hl-3">cross_validation_split:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">kfolds</span><span class="hl-1">], </span><span class="hl-0">//splits data into k-folds</span><br/><span class="hl-1">    </span><span class="hl-3">cross_validate_score:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">cross_validate_score</span><span class="hl-1">],</span><span class="hl-0">//test model variance and bias</span><br/><span class="hl-1">    </span><span class="hl-3">grid_search:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">grid_search</span><span class="hl-1">], </span><span class="hl-0">// tune models with grid search for optimal performance</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  DataSet </span><span class="hl-3">[Class: DataSet]:</span><span class="hl-1"> { </span><span class="hl-0">//class for manipulating an array of objects (typically from CSV data)</span><br/><span class="hl-1">    </span><span class="hl-5">columnMatrix</span><span class="hl-1">(</span><span class="hl-3">vectors</span><span class="hl-1">), </span><span class="hl-0">//returns a matrix of values by combining column arrays into a matrix</span><br/><span class="hl-1">    </span><span class="hl-5">columnArray</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new array of a selected column from an array of objects, can filter, scale and replace values</span><br/><span class="hl-1">    </span><span class="hl-5">columnReplace</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new array of a selected column from an array of objects and replaces empty values, encodes values and scales values</span><br/><span class="hl-1">    </span><span class="hl-5">columnScale</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new array of scaled values which can be reverse (descaled). The scaling transformations are stored on the DataSet</span><br/><span class="hl-1">    </span><span class="hl-5">columnDescale</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - Returns a new array of descaled values</span><br/><span class="hl-1">    </span><span class="hl-5">selectColumns</span><span class="hl-1">(</span><span class="hl-3">columns</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">//returns a list of objects with only selected columns as properties</span><br/><span class="hl-1">    </span><span class="hl-5">labelEncoder</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new array and label encodes a selected column</span><br/><span class="hl-1">    </span><span class="hl-5">labelDecode</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new array and decodes an encoded column back to the original array values</span><br/><span class="hl-1">    </span><span class="hl-5">oneHotEncoder</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new object of one hot encoded values</span><br/><span class="hl-1">    </span><span class="hl-5">columnMatrix</span><span class="hl-1">(</span><span class="hl-3">columnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a matrix of values from multiple columns</span><br/><span class="hl-1">    </span><span class="hl-5">columnReducer</span><span class="hl-1">(</span><span class="hl-3">newColumnName</span><span class="hl-1">, </span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - returns a new array of a selected column that is passed a reducer function, this is used to create new columns for aggregate statistics</span><br/><span class="hl-1">    </span><span class="hl-5">columnMerge</span><span class="hl-1">(</span><span class="hl-3">name</span><span class="hl-1">, </span><span class="hl-3">data</span><span class="hl-1">), </span><span class="hl-0">// - returns a new column that is merged onto the data set</span><br/><span class="hl-1">    </span><span class="hl-5">filterColumn</span><span class="hl-1">(</span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - filtered rows of data,</span><br/><span class="hl-1">    </span><span class="hl-5">fitColumns</span><span class="hl-1">(</span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// - mutates data property of DataSet by replacing multiple columns in a single command</span><br/><span class="hl-1">    static </span><span class="hl-5">reverseColumnMatrix</span><span class="hl-1">(</span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// returns an array of objects by applying labels to matrix of columns</span><br/><span class="hl-1">    static </span><span class="hl-5">reverseColumnVector</span><span class="hl-1">(</span><span class="hl-3">options</span><span class="hl-1">), </span><span class="hl-0">// returns an array of objects by applying labels to column vector</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-3">calc:</span><span class="hl-1">{</span><br/><span class="hl-1">    </span><span class="hl-3">getTransactions:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1"> </span><span class="hl-3">getTransactions</span><span class="hl-1">], </span><span class="hl-0">// Formats an array of transactions into a sparse matrix like format for Apriori/Eclat</span><br/><span class="hl-1">    </span><span class="hl-3">assocationRuleLearning:</span><span class="hl-1"> [</span><span class="hl-3">async</span><span class="hl-1"> </span><span class="hl-4">Function</span><span class="hl-1"> </span><span class="hl-3">assocationRuleLearning</span><span class="hl-1">], </span><span class="hl-0">// returns association rule learning results using apriori</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-3">util:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">range:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">], </span><span class="hl-0">// range helper function</span><br/><span class="hl-1">    </span><span class="hl-3">rangeRight:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">], </span><span class="hl-0">//range right helper function</span><br/><span class="hl-1">    </span><span class="hl-3">scale:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">scale</span><span class="hl-1">], </span><span class="hl-0">//scale / normalize data</span><br/><span class="hl-1">    </span><span class="hl-3">avg:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">arithmeticMean</span><span class="hl-1">], </span><span class="hl-0">// aritmatic mean</span><br/><span class="hl-1">    </span><span class="hl-3">mean:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">arithmeticMean</span><span class="hl-1">], </span><span class="hl-0">// aritmatic mean</span><br/><span class="hl-1">    </span><span class="hl-3">sum:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">sum</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">max:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">max</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">min:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">min</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">sd:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">standardDeviation</span><span class="hl-1">], </span><span class="hl-0">// standard deviation</span><br/><span class="hl-1">    </span><span class="hl-3">StandardScalerTransforms:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">StandardScalerTransforms</span><span class="hl-1">], </span><span class="hl-0">// returns two functions that can standard scale new inputs and reverse scale new outputs</span><br/><span class="hl-1">    </span><span class="hl-3">MinMaxScalerTransforms:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">MinMaxScalerTransforms</span><span class="hl-1">], </span><span class="hl-0">// returns two functions that can mix max scale new inputs and reverse scale new outputs</span><br/><span class="hl-1">    </span><span class="hl-3">StandardScaler:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">StandardScaler</span><span class="hl-1">], </span><span class="hl-0">// standardization (z-scores)</span><br/><span class="hl-1">    </span><span class="hl-3">MinMaxScaler:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">MinMaxScaler</span><span class="hl-1">], </span><span class="hl-0">// min-max scaling</span><br/><span class="hl-1">    </span><span class="hl-3">ExpScaler:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">ExpScaler</span><span class="hl-1">], </span><span class="hl-0">// exponent scaling</span><br/><span class="hl-1">    </span><span class="hl-3">LogScaler:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">LogScaler</span><span class="hl-1">], </span><span class="hl-0">// natual log scaling</span><br/><span class="hl-1">    </span><span class="hl-3">squaredDifference:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">squaredDifference</span><span class="hl-1">], </span><span class="hl-0">// Returns an array of the squared different of two arrays</span><br/><span class="hl-1">    </span><span class="hl-3">standardError:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">standardError</span><span class="hl-1">], </span><span class="hl-0">// The standard error of the estimate is a measure of the accuracy of predictions made with a regression line</span><br/><span class="hl-1">    </span><span class="hl-3">coefficientOfDetermination:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">coefficientOfDetermination</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">adjustedCoefficentOfDetermination:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">adjustedCoefficentOfDetermination</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">adjustedRSquared:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">adjustedCoefficentOfDetermination</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">rBarSquared:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">adjustedCoefficentOfDetermination</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">r:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">coefficientOfCorrelation</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">coefficientOfCorrelation:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">coefficientOfCorrelation</span><span class="hl-1">],</span><br/><span class="hl-1">    </span><span class="hl-3">rSquared:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">rSquared</span><span class="hl-1">], </span><span class="hl-0">//r^2</span><br/><span class="hl-1">    </span><span class="hl-3">pivotVector:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">pivotVector</span><span class="hl-1">], </span><span class="hl-0">// returns an array of vectors as an array of arrays</span><br/><span class="hl-1">    </span><span class="hl-3">pivotArrays:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">pivotArrays</span><span class="hl-1">], </span><span class="hl-0">// returns a matrix of values by combining arrays into a matrix</span><br/><span class="hl-1">    </span><span class="hl-3">standardScore:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">standardScore</span><span class="hl-1">], </span><span class="hl-0">// Calculates the z score of each value in the sample, relative to the sample mean and standard deviation.</span><br/><span class="hl-1">    </span><span class="hl-3">zScore:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">standardScore</span><span class="hl-1">], </span><span class="hl-0">// alias for standardScore.</span><br/><span class="hl-1">    </span><span class="hl-3">approximateZPercentile:</span><span class="hl-1"> [</span><span class="hl-4">Function</span><span class="hl-1">: </span><span class="hl-3">approximateZPercentile</span><span class="hl-1">], </span><span class="hl-0">// approximate the p value from a z score</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-3">preprocessing:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">DataSet:</span><span class="hl-1"> [</span><span class="hl-3">Class</span><span class="hl-1"> </span><span class="hl-3">DataSet</span><span class="hl-1">],</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">}</span>
 </code></pre>
-				<a href="#python-1" id="python-1" style="color: inherit; text-decoration: none;">
-					<h5>Python</h5>
-				</a>
-				<pre><code class="language-python"><span style="color: #000000">X = dataset.iloc[:, :-</span><span style="color: #098658">1</span><span style="color: #000000">].values</span>
-<span style="color: #000000">y = dataset.iloc[:, </span><span style="color: #098658">3</span><span style="color: #000000">].values</span>
 
-<span style="color: #008000"># Taking care of of missing data</span>
-<span style="color: #AF00DB">from</span><span style="color: #000000"> sklearn.preprocessing </span><span style="color: #AF00DB">import</span><span style="color: #000000"> Imputer</span>
-<span style="color: #000000">imputer = Imputer(</span><span style="color: #001080">missing_values</span><span style="color: #000000">=</span><span style="color: #A31515">&#039;NaN&#039;</span><span style="color: #000000">, </span><span style="color: #001080">strategy</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;mean&#039;</span><span style="color: #000000">, </span><span style="color: #001080">axis</span><span style="color: #000000">=</span><span style="color: #098658">0</span><span style="color: #000000">)</span>
-<span style="color: #000000">imputer = imputer.fit(X[:, </span><span style="color: #098658">1</span><span style="color: #000000">:</span><span style="color: #098658">3</span><span style="color: #000000">])</span>
-<span style="color: #000000">X[:, </span><span style="color: #098658">1</span><span style="color: #000000">:</span><span style="color: #098658">3</span><span style="color: #000000">] = imputer.transform(X[:, </span><span style="color: #098658">1</span><span style="color: #000000">:</span><span style="color: #098658">3</span><span style="color: #000000">])</span>
-</code></pre>
-				<a href="#r-1" id="r-1" style="color: inherit; text-decoration: none;">
-					<h5>R</h5>
-				</a>
-				<pre><code class="language-R"><span style="color: #008000"># Taking care of the missing data</span>
-<span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Age</span><span style="color: #000000"> = </span><span style="color: #AF00DB">ifelse</span><span style="color: #000000">(</span><span style="color: #795E26">is.na</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Age</span><span style="color: #000000">),</span>
-<span style="color: #000000">                </span><span style="color: #795E26">ave</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Age</span><span style="color: #000000">,</span><span style="color: #001080">FUN</span><span style="color: #000000"> = </span><span style="color: #AF00DB">function</span><span style="color: #000000">(</span><span style="color: #001080">x</span><span style="color: #000000">) </span><span style="color: #795E26">mean</span><span style="color: #000000">(</span><span style="color: #001080">x</span><span style="color: #000000">,</span><span style="color: #001080">na.rm</span><span style="color: #000000"> =</span><span style="color: #0000FF">TRUE</span><span style="color: #000000">)),</span>
-<span style="color: #000000">                </span><span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Age</span><span style="color: #000000">)</span>
-</code></pre>
-				<a href="#one-hot-encoding-and-label-encoding" id="one-hot-encoding-and-label-encoding" style="color: inherit; text-decoration: none;">
-					<h4>One Hot Encoding and Label Encoding</h4>
-				</a>
-				<a href="#javascript-2" id="javascript-2" style="color: inherit; text-decoration: none;">
-					<h5>Javascript</h5>
-				</a>
-				<pre><code class="language-javascript"><span style="color: #008000">// [ &#039;Brazil&#039;,&#039;Mexico&#039;,&#039;Ghana&#039;,&#039;Mexico&#039;,&#039;Ghana&#039;,&#039;Brazil&#039;,&#039;Mexico&#039;,&#039;Brazil&#039;,&#039;Ghana&#039;, &#039;Brazil&#039; ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">originalCountry</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">columnArray</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Country&#039;</span><span style="color: #000000">); </span>
-<span style="color: #008000">/*</span>
-<span style="color: #008000">{ originalCountry:</span>
-<span style="color: #008000">   { Country_Brazil: [ 1, 0, 0, 0, 0, 1, 0, 1, 0, 1 ],</span>
-<span style="color: #008000">     Country_Mexico: [ 0, 1, 0, 1, 0, 0, 1, 0, 0, 0 ],</span>
-<span style="color: #008000">     Country_Ghana: [ 0, 0, 1, 0, 1, 0, 0, 0, 1, 0 ] },</span>
-<span style="color: #008000">    }</span>
-<span style="color: #008000">*/</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">oneHotCountryColumn</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">oneHotEncoder</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Country&#039;</span><span style="color: #000000">);</span>
+<a href="#examples-javascript--python--r" id="examples-javascript--python--r" style="color: inherit; text-decoration: none;">
+  <h3>Examples (JavaScript / Python / R)</h3>
+</a>
 
-<span style="color: #008000">// [ &#039;N&#039;, &#039;Yes&#039;, &#039;No&#039;, &#039;f&#039;, &#039;Yes&#039;, &#039;Yes&#039;, &#039;false&#039;, &#039;Yes&#039;, &#039;No&#039;, &#039;Yes&#039; ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">originalPurchasedColumn</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">labelEncoder</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Purchased&#039;</span><span style="color: #000000">);</span>
-<span style="color: #008000">// [ 0, 1, 0, 0, 1, 1, 1, 1, 0, 1 ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">encodedBinaryPurchasedColumn</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">labelEncoder</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Purchased&#039;</span><span style="color: #000000">,{ </span><span style="color: #001080">binary:</span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
-<span style="color: #008000">// [ 0, 1, 2, 3, 1, 1, 4, 1, 2, 1 ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">encodedPurchasedColumn</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">labelEncoder</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Purchased&#039;</span><span style="color: #000000">);</span>
-<span style="color: #008000">// [ &#039;N&#039;, &#039;Yes&#039;, &#039;No&#039;, &#039;f&#039;, &#039;Yes&#039;, &#039;Yes&#039;, &#039;false&#039;, &#039;Yes&#039;, &#039;No&#039;, &#039;Yes&#039; ]</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">decodedPurchased</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">labelDecode</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Purchased&#039;</span><span style="color: #000000">, { </span><span style="color: #001080">data:</span><span style="color: #000000"> </span><span style="color: #001080">encodedPurchasedColumn</span><span style="color: #000000">, });</span>
+<a href="#loading-csv-data" id="loading-csv-data" style="color: inherit; text-decoration: none;">
+  <h4>Loading CSV Data</h4>
+</a>
 
+<a href="#javascript" id="javascript" style="color: inherit; text-decoration: none;">
+  <h5>Javascript</h5>
+</a>
+<pre><code class="language-javascript"><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-6">default</span><span class="hl-1"> </span><span class="hl-6">as</span><span class="hl-1"> </span><span class="hl-3">jsk</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;modelscript&#39;</span><span class="hl-1">;</span><br/><span class="hl-7">let</span><span class="hl-1"> </span><span class="hl-3">dataset</span><span class="hl-1">;</span><br/><br/><span class="hl-0">//In JavaScript, by default most I/O Operations are asynchronous, see the notes section for more</span><br/><span class="hl-3">ms</span><span class="hl-1">.</span><span class="hl-5">loadCSV</span><span class="hl-1">(</span><span class="hl-2">&#39;/some/file/path.csv&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">then</span><span class="hl-1">(</span><span class="hl-3">csvData</span><span class="hl-7">=&gt;</span><span class="hl-1">{</span><br/><span class="hl-1">    </span><span class="hl-3">dataset</span><span class="hl-1"> = </span><span class="hl-7">new</span><span class="hl-1"> </span><span class="hl-3">ms</span><span class="hl-1">.</span><span class="hl-5">DataSet</span><span class="hl-1">(</span><span class="hl-3">csvData</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-3">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">({</span><span class="hl-3">csvData</span><span class="hl-1">});</span><br/><span class="hl-1">    </span><span class="hl-0">/* csvData [{</span><br/><span class="hl-0">      &#39;Country&#39;: &#39;Brazil&#39;,</span><br/><span class="hl-0">      &#39;Age&#39;: &#39;44&#39;,</span><br/><span class="hl-0">      &#39;Salary&#39;: &#39;72000&#39;,</span><br/><span class="hl-0">      &#39;Purchased&#39;: &#39;N&#39;,</span><br/><span class="hl-0">    },</span><br/><span class="hl-0">    ...</span><br/><span class="hl-0">    {</span><br/><span class="hl-0">      &#39;Country&#39;: &#39;Mexico&#39;,</span><br/><span class="hl-0">      &#39;Age&#39;: &#39;27&#39;,</span><br/><span class="hl-0">      &#39;Salary&#39;: &#39;48000&#39;,</span><br/><span class="hl-0">      &#39;Purchased&#39;: &#39;Yes&#39;,</span><br/><span class="hl-0">    }] */</span><br/><span class="hl-1">  })</span><br/><span class="hl-1">  .</span><span class="hl-5">catch</span><span class="hl-1">(</span><span class="hl-3">console</span><span class="hl-1">.</span><span class="hl-3">error</span><span class="hl-1">);</span><br/><br/><span class="hl-0">// or from URL</span><br/><span class="hl-3">ms</span><span class="hl-1">.</span><span class="hl-5">loadCSV</span><span class="hl-1">(</span><span class="hl-2">&#39;https://example.com/some/file/path.csv&#39;</span><span class="hl-1">)</span><br/>
+</code></pre>
 
-<span style="color: #008000">//fit Columns, mutates dataset</span>
-<span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">fitColumns</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">columns:</span><span style="color: #000000">[</span>
-<span style="color: #000000">    {</span>
-<span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Purchased&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      </span><span style="color: #001080">options:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">        </span><span style="color: #001080">strategy:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;label&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">labelOptions:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">          </span><span style="color: #001080">binary:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
-<span style="color: #000000">        },</span>
-<span style="color: #000000">      },</span>
-<span style="color: #000000">    },</span>
-<span style="color: #000000">    {</span>
-<span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Country&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      </span><span style="color: #001080">options:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">        </span><span style="color: #001080">strategy:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;onehot&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      },</span>
-<span style="color: #000000">    },</span>
-<span style="color: #000000">  ]</span>
-<span style="color: #000000">});</span>
+<a href="#python" id="python" style="color: inherit; text-decoration: none;">
+  <h5>Python</h5>
+</a>
+<pre><code class="language-python"><span class="hl-6">import</span><span class="hl-1"> pandas </span><span class="hl-6">as</span><span class="hl-1"> pd</span><br/><br/><span class="hl-0">#Importing the dataset</span><br/><span class="hl-1">dataset = pd.read_csv(</span><span class="hl-2">&#39;/some/file/path.csv&#39;</span><span class="hl-1">)</span>
 </code></pre>
-				<a href="#python-2" id="python-2" style="color: inherit; text-decoration: none;">
-					<h5>Python</h5>
-				</a>
-				<pre><code class="language-python"><span style="color: #008000"># Encoding  categorical data</span>
-<span style="color: #AF00DB">from</span><span style="color: #000000"> sklearn.preprocessing </span><span style="color: #AF00DB">import</span><span style="color: #000000"> LabelEncoder, OneHotEncoder</span>
-<span style="color: #000000">labelencoder_X = LabelEncoder()</span>
-<span style="color: #000000">X[:, </span><span style="color: #098658">0</span><span style="color: #000000">] = labelencoder_X.fit_transform(X[:, </span><span style="color: #098658">0</span><span style="color: #000000">])</span>
-<span style="color: #000000">onehotencoder = OneHotEncoder(</span><span style="color: #001080">categorical_features</span><span style="color: #000000">=[</span><span style="color: #098658">0</span><span style="color: #000000">])</span>
-<span style="color: #000000">X = onehotencoder.fit_transform(X).toarray()</span>
-<span style="color: #000000">labelencoder_y = LabelEncoder()</span>
-<span style="color: #000000">y = labelencoder_y.fit_transform(y)</span>
-</code></pre>
-				<a href="#r-2" id="r-2" style="color: inherit; text-decoration: none;">
-					<h5>R</h5>
-				</a>
-				<pre><code class="language-R"><span style="color: #008000"># Encoding categorical data</span>
-<span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Country</span><span style="color: #000000"> = </span><span style="color: #795E26">factor</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Country</span><span style="color: #000000">,</span>
-<span style="color: #000000">                         </span><span style="color: #001080">levels</span><span style="color: #000000"> = </span><span style="color: #795E26">c</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Brazil&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;Mexico&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;Ghana&#039;</span><span style="color: #000000">),</span>
-<span style="color: #000000">                         </span><span style="color: #001080">labels</span><span style="color: #000000"> = </span><span style="color: #795E26">c</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">))</span>
 
-<span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Purchased</span><span style="color: #000000"> = </span><span style="color: #795E26">factor</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Purchased</span><span style="color: #000000">,</span>
-<span style="color: #000000">                         </span><span style="color: #001080">levels</span><span style="color: #000000"> = </span><span style="color: #795E26">c</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;No&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;Yes&#039;</span><span style="color: #000000">),</span>
-<span style="color: #000000">                         </span><span style="color: #001080">labels</span><span style="color: #000000"> = </span><span style="color: #795E26">c</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">))</span>
+<a href="#r" id="r" style="color: inherit; text-decoration: none;">
+  <h5>R</h5>
+</a>
+<pre><code class="language-R"><span class="hl-0"># Importingd the dataset</span><br/><span class="hl-3">dataset</span><span class="hl-1"> = </span><span class="hl-5">read.csv</span><span class="hl-1">(</span><span class="hl-2">&#39;Data.csv&#39;</span><span class="hl-1">)</span>
 </code></pre>
-				<a href="#cross-validation" id="cross-validation" style="color: inherit; text-decoration: none;">
-					<h4>Cross Validation</h4>
-				</a>
-				<a href="#javascript-3" id="javascript-3" style="color: inherit; text-decoration: none;">
-					<h5>Javascript</h5>
-				</a>
-				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">testArray</span><span style="color: #000000"> = [</span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">25</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #098658">33</span><span style="color: #000000">, </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #098658">19</span><span style="color: #000000">, </span><span style="color: #098658">34</span><span style="color: #000000">, </span><span style="color: #098658">90</span><span style="color: #000000">, </span><span style="color: #098658">23</span><span style="color: #000000">, ];</span>
 
-<span style="color: #008000">// { train: [ 50, 20, 34, 33, 10, 23, 90, 42 ], test: [ 25, 19 ] }</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">trainTestSplit</span><span style="color: #000000"> = </span><span style="color: #001080">ms</span><span style="color: #000000">.</span><span style="color: #001080">cross_validation</span><span style="color: #000000">.</span><span style="color: #795E26">train_test_split</span><span style="color: #000000">(</span><span style="color: #001080">testArray</span><span style="color: #000000">,{ </span><span style="color: #001080">test_size:</span><span style="color: #098658">0.2</span><span style="color: #000000">, </span><span style="color: #001080">random_state:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, });</span>
+<a href="#handling-missing-data" id="handling-missing-data" style="color: inherit; text-decoration: none;">
+  <h4>Handling Missing Data</h4>
+</a>
 
-<span style="color: #008000">// [ [ 50, 20, 34, 33, 10 ], [ 23, 90, 42, 19, 25 ] ] </span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">crossValidationArrayKFolds</span><span style="color: #000000"> = </span><span style="color: #001080">ms</span><span style="color: #000000">.</span><span style="color: #001080">cross_validation</span><span style="color: #000000">.</span><span style="color: #795E26">cross_validation_split</span><span style="color: #000000">(</span><span style="color: #001080">testArray</span><span style="color: #000000">, { </span><span style="color: #001080">folds:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #001080">random_state:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, });</span>
+<a href="#javascript-1" id="javascript-1" style="color: inherit; text-decoration: none;">
+  <h5>Javascript</h5>
+</a>
+<pre><code class="language-javascript"><span class="hl-0">//column Array returns column of data by name</span><br/><span class="hl-0">// [ &#39;44&#39;,&#39;27&#39;,&#39;30&#39;,&#39;38&#39;,&#39;40&#39;,&#39;35&#39;,&#39;&#39;,&#39;48&#39;,&#39;50&#39;, &#39;37&#39; ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">OringalAgeColumn</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">columnArray</span><span class="hl-1">(</span><span class="hl-2">&#39;Age&#39;</span><span class="hl-1">); </span><br/><br/><span class="hl-0">//column Replace returns new Array with replaced missing data</span><br/><span class="hl-0">//[ &#39;44&#39;,&#39;27&#39;,&#39;30&#39;,&#39;38&#39;,&#39;40&#39;,&#39;35&#39;,38.77777777777778,&#39;48&#39;,&#39;50&#39;,&#39;37&#39; ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">ReplacedAgeMeanColumn</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">columnReplace</span><span class="hl-1">(</span><span class="hl-2">&#39;Age&#39;</span><span class="hl-1">,{</span><span class="hl-3">strategy:</span><span class="hl-2">&#39;mean&#39;</span><span class="hl-1">}); </span><br/><br/><span class="hl-0">//fit Columns, mutates dataset</span><br/><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">fitColumns</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-3">columns:</span><span class="hl-1">[{</span><span class="hl-3">name:</span><span class="hl-2">&#39;Age&#39;</span><span class="hl-1">,</span><span class="hl-3">strategy:</span><span class="hl-2">&#39;mean&#39;</span><span class="hl-1">}]</span><br/><span class="hl-1">});</span><br/><span class="hl-0">/*</span><br/><span class="hl-0">dataset</span><br/><span class="hl-0">class DataSet</span><br/><span class="hl-0">  data:[</span><br/><span class="hl-0">    {</span><br/><span class="hl-0">      &#39;Country&#39;: &#39;Brazil&#39;,</span><br/><span class="hl-0">      &#39;Age&#39;: &#39;38.77777777777778&#39;,</span><br/><span class="hl-0">      &#39;Salary&#39;: &#39;72000&#39;,</span><br/><span class="hl-0">      &#39;Purchased&#39;: &#39;N&#39;,</span><br/><span class="hl-0">    }</span><br/><span class="hl-0">    ...</span><br/><span class="hl-0">  ]</span><br/><span class="hl-0">*/</span>
 </code></pre>
-				<a href="#python-3" id="python-3" style="color: inherit; text-decoration: none;">
-					<h5>Python</h5>
-				</a>
-				<pre><code class="language-python"><span style="color: #008000">#splitting the dataset into trnaing set and test set</span>
-<span style="color: #AF00DB">from</span><span style="color: #000000"> sklearn.cross_validation </span><span style="color: #AF00DB">import</span><span style="color: #000000"> train_test_split</span>
-<span style="color: #000000">X_train, X_test, y_train, y_test = train_test_split(X, y, </span><span style="color: #001080">test_size</span><span style="color: #000000"> = </span><span style="color: #098658">0.2</span><span style="color: #000000">, </span><span style="color: #001080">random_state</span><span style="color: #000000"> = </span><span style="color: #098658">0</span><span style="color: #000000">)</span>
-</code></pre>
-				<a href="#r-3" id="r-3" style="color: inherit; text-decoration: none;">
-					<h5>R</h5>
-				</a>
-				<pre><code class="language-R"><span style="color: #008000"># Splitting the dataset into the training set and test set</span>
-<span style="color: #795E26">library</span><span style="color: #000000">(</span><span style="color: #001080">caTools</span><span style="color: #000000">)</span>
-<span style="color: #795E26">set.seed</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">)</span>
-<span style="color: #001080">split</span><span style="color: #000000"> = </span><span style="color: #001080">sample.split</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #0000FF">$</span><span style="color: #001080">Purchased</span><span style="color: #000000">, </span><span style="color: #001080">SplitRatio</span><span style="color: #000000"> = </span><span style="color: #098658">0.8</span><span style="color: #000000">)</span>
-<span style="color: #001080">training_set</span><span style="color: #000000"> = </span><span style="color: #795E26">subset</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #000000">, </span><span style="color: #001080">split</span><span style="color: #000000"> == </span><span style="color: #0000FF">TRUE</span><span style="color: #000000">)</span>
-<span style="color: #001080">test_set</span><span style="color: #000000"> = </span><span style="color: #795E26">subset</span><span style="color: #000000">(</span><span style="color: #001080">dataset</span><span style="color: #000000">, </span><span style="color: #001080">split</span><span style="color: #000000"> == </span><span style="color: #0000FF">FALSE</span><span style="color: #000000">)</span>
-</code></pre>
-				<a href="#scaling-z-score--min-mix" id="scaling-z-score--min-mix" style="color: inherit; text-decoration: none;">
-					<h4>Scaling (z-score / min-mix)</h4>
-				</a>
-				<a href="#javascript-4" id="javascript-4" style="color: inherit; text-decoration: none;">
-					<h5>Javascript</h5>
-				</a>
-				<pre><code class="language-javascript"><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">columnArray</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Salary&#039;</span><span style="color: #000000">,{ </span><span style="color: #001080">scale:</span><span style="color: #A31515">&#039;standard&#039;</span><span style="color: #000000">}); </span>
-<span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">columnArray</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Salary&#039;</span><span style="color: #000000">,{ </span><span style="color: #001080">scale:</span><span style="color: #A31515">&#039;minmax&#039;</span><span style="color: #000000">}); </span>
-</code></pre>
-				<a href="#python-4" id="python-4" style="color: inherit; text-decoration: none;">
-					<h5>Python</h5>
-				</a>
-				<pre><code class="language-python"><span style="color: #AF00DB">from</span><span style="color: #000000"> sklearn.preprocessing </span><span style="color: #AF00DB">import</span><span style="color: #000000"> StandardScaler</span>
-<span style="color: #000000">sc_X = StandardScaler()</span>
-<span style="color: #000000">X_train = sc_X.fit_transform(X_train)</span>
-<span style="color: #000000">X_test = sc_X.transform(X_test)</span>
-</code></pre>
-				<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
-					<h3>Notes</h3>
-				</a>
-				<p>Check out <a href="https://repetere.github.io/modelscript">https://repetere.github.io/modelscript</a> for the full modelscript Documentation</p>
-				<a href="#a-quick-word-about-asynchronous-javascript" id="a-quick-word-about-asynchronous-javascript" style="color: inherit; text-decoration: none;">
-					<h4>A quick word about asynchronous JavaScript</h4>
-				</a>
-				<p>Most machine learning tutorials in Python and R are not using their asynchronous equivalents; however, there is a bias in JavaScript to default to non-blocking operations.</p>
-				<p>With the advent of ES7 and Node.js 7+ there are syntax helpers with asynchronous functions. It may be easier to use async/await in JS if you want an approximation close to what a workflow would look like in R/Python</p>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">fs</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;fs-extra&#039;</span><span style="color: #000000">;</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">np</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;numjs&#039;</span><span style="color: #000000">; </span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">ml</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ml&#039;</span><span style="color: #000000">;</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">pd</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;pandas-js&#039;</span><span style="color: #000000">;</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #001080">mpn</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;matplotnode&#039;</span><span style="color: #000000">;</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">loadCSV</span><span style="color: #000000">, </span><span style="color: #001080">preprocessing</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;modelscript&#039;</span><span style="color: #000000">;</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">plt</span><span style="color: #000000"> = </span><span style="color: #001080">mpn</span><span style="color: #000000">.</span><span style="color: #001080">plot</span><span style="color: #000000">;</span>
 
-<span style="color: #0000FF">void</span><span style="color: #000000"> </span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">csvData</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">loadCSV</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;../Data.csv&#039;</span><span style="color: #000000">);</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">rawData</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">preprocessing</span><span style="color: #000000">.</span><span style="color: #795E26">DataSet</span><span style="color: #000000">(</span><span style="color: #001080">csvData</span><span style="color: #000000">);</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fittedData</span><span style="color: #000000"> = </span><span style="color: #001080">rawData</span><span style="color: #000000">.</span><span style="color: #795E26">fitColumns</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">columns:</span><span style="color: #000000"> [</span>
-<span style="color: #000000">      { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Age&#039;</span><span style="color: #000000"> },</span>
-<span style="color: #000000">      { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Salary&#039;</span><span style="color: #000000"> },</span>
-<span style="color: #000000">      {</span>
-<span style="color: #000000">        </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Purchased&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">options:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">          </span><span style="color: #001080">strategy:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;label&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">          </span><span style="color: #001080">labelOptions:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">            </span><span style="color: #001080">binary:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
-<span style="color: #000000">          },</span>
-<span style="color: #000000">        }</span>
-<span style="color: #000000">      },</span>
-<span style="color: #000000">    ]</span>
-<span style="color: #000000">  });</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">dataset</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">pd</span><span style="color: #000000">.</span><span style="color: #795E26">DataFrame</span><span style="color: #000000">(</span><span style="color: #001080">fittedData</span><span style="color: #000000">);</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">X</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">iloc</span><span style="color: #000000">(</span>
-<span style="color: #000000">    [ </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000"> ],</span>
-<span style="color: #000000">    [ </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000"> ]).</span><span style="color: #001080">values</span><span style="color: #000000">;</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">y</span><span style="color: #000000"> = </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #795E26">iloc</span><span style="color: #000000">(</span>
-<span style="color: #000000">    [ </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">dataset</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000"> ],</span>
-<span style="color: #000000">    </span><span style="color: #098658">3</span><span style="color: #000000">).</span><span style="color: #001080">values</span><span style="color: #000000">;</span>
-<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">X</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">y</span>
-<span style="color: #000000">  });</span>
-<span style="color: #000000">}();</span>
-
+<a href="#python-1" id="python-1" style="color: inherit; text-decoration: none;">
+  <h5>Python</h5>
+</a>
+<pre><code class="language-python"><span class="hl-1">X = dataset.iloc[:, :-</span><span class="hl-9">1</span><span class="hl-1">].values</span><br/><span class="hl-1">y = dataset.iloc[:, </span><span class="hl-9">3</span><span class="hl-1">].values</span><br/><br/><span class="hl-0"># Taking care of of missing data</span><br/><span class="hl-6">from</span><span class="hl-1"> sklearn.preprocessing </span><span class="hl-6">import</span><span class="hl-1"> Imputer</span><br/><span class="hl-1">imputer = Imputer(</span><span class="hl-3">missing_values</span><span class="hl-1">=</span><span class="hl-2">&#39;NaN&#39;</span><span class="hl-1">, </span><span class="hl-3">strategy</span><span class="hl-1"> = </span><span class="hl-2">&#39;mean&#39;</span><span class="hl-1">, </span><span class="hl-3">axis</span><span class="hl-1">=</span><span class="hl-9">0</span><span class="hl-1">)</span><br/><span class="hl-1">imputer = imputer.fit(X[:, </span><span class="hl-9">1</span><span class="hl-1">:</span><span class="hl-9">3</span><span class="hl-1">])</span><br/><span class="hl-1">X[:, </span><span class="hl-9">1</span><span class="hl-1">:</span><span class="hl-9">3</span><span class="hl-1">] = imputer.transform(X[:, </span><span class="hl-9">1</span><span class="hl-1">:</span><span class="hl-9">3</span><span class="hl-1">])</span>
 </code></pre>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="modules/pd.html">PD</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="classes/dataset.html" class="tsd-kind-icon">Data<wbr>Set</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#calc" class="tsd-kind-icon">calc</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#cross_validation" class="tsd-kind-icon">cross_<wbr>validation</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#csv" class="tsd-kind-icon">csv</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#nlp" class="tsd-kind-icon">nlp</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#util" class="tsd-kind-icon">util</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+
+<a href="#r-1" id="r-1" style="color: inherit; text-decoration: none;">
+  <h5>R</h5>
+</a>
+<pre><code class="language-R"><span class="hl-0"># Taking care of the missing data</span><br/><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Age</span><span class="hl-1"> = </span><span class="hl-6">ifelse</span><span class="hl-1">(</span><span class="hl-5">is.na</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Age</span><span class="hl-1">),</span><br/><span class="hl-1">                </span><span class="hl-5">ave</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Age</span><span class="hl-1">,</span><span class="hl-5">FUN</span><span class="hl-1"> = </span><span class="hl-6">function</span><span class="hl-1">(</span><span class="hl-3">x</span><span class="hl-1">) </span><span class="hl-5">mean</span><span class="hl-1">(</span><span class="hl-3">x</span><span class="hl-1">,</span><span class="hl-3">na.rm</span><span class="hl-1"> =</span><span class="hl-7">TRUE</span><span class="hl-1">)),</span><br/><span class="hl-1">                </span><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Age</span><span class="hl-1">)</span>
+</code></pre>
+
+<a href="#one-hot-encoding-and-label-encoding" id="one-hot-encoding-and-label-encoding" style="color: inherit; text-decoration: none;">
+  <h4>One Hot Encoding and Label Encoding</h4>
+</a>
+
+<a href="#javascript-2" id="javascript-2" style="color: inherit; text-decoration: none;">
+  <h5>Javascript</h5>
+</a>
+<pre><code class="language-javascript"><span class="hl-0">// [ &#39;Brazil&#39;,&#39;Mexico&#39;,&#39;Ghana&#39;,&#39;Mexico&#39;,&#39;Ghana&#39;,&#39;Brazil&#39;,&#39;Mexico&#39;,&#39;Brazil&#39;,&#39;Ghana&#39;, &#39;Brazil&#39; ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">originalCountry</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">columnArray</span><span class="hl-1">(</span><span class="hl-2">&#39;Country&#39;</span><span class="hl-1">); </span><br/><span class="hl-0">/*</span><br/><span class="hl-0">{ originalCountry:</span><br/><span class="hl-0">   { Country_Brazil: [ 1, 0, 0, 0, 0, 1, 0, 1, 0, 1 ],</span><br/><span class="hl-0">     Country_Mexico: [ 0, 1, 0, 1, 0, 0, 1, 0, 0, 0 ],</span><br/><span class="hl-0">     Country_Ghana: [ 0, 0, 1, 0, 1, 0, 0, 0, 1, 0 ] },</span><br/><span class="hl-0">    }</span><br/><span class="hl-0">*/</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">oneHotCountryColumn</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">oneHotEncoder</span><span class="hl-1">(</span><span class="hl-2">&#39;Country&#39;</span><span class="hl-1">);</span><br/><br/><span class="hl-0">// [ &#39;N&#39;, &#39;Yes&#39;, &#39;No&#39;, &#39;f&#39;, &#39;Yes&#39;, &#39;Yes&#39;, &#39;false&#39;, &#39;Yes&#39;, &#39;No&#39;, &#39;Yes&#39; ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">originalPurchasedColumn</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">labelEncoder</span><span class="hl-1">(</span><span class="hl-2">&#39;Purchased&#39;</span><span class="hl-1">);</span><br/><span class="hl-0">// [ 0, 1, 0, 0, 1, 1, 1, 1, 0, 1 ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">encodedBinaryPurchasedColumn</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">labelEncoder</span><span class="hl-1">(</span><span class="hl-2">&#39;Purchased&#39;</span><span class="hl-1">,{ </span><span class="hl-3">binary:</span><span class="hl-7">true</span><span class="hl-1"> });</span><br/><span class="hl-0">// [ 0, 1, 2, 3, 1, 1, 4, 1, 2, 1 ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">encodedPurchasedColumn</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">labelEncoder</span><span class="hl-1">(</span><span class="hl-2">&#39;Purchased&#39;</span><span class="hl-1">);</span><br/><span class="hl-0">// [ &#39;N&#39;, &#39;Yes&#39;, &#39;No&#39;, &#39;f&#39;, &#39;Yes&#39;, &#39;Yes&#39;, &#39;false&#39;, &#39;Yes&#39;, &#39;No&#39;, &#39;Yes&#39; ]</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">decodedPurchased</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">labelDecode</span><span class="hl-1">(</span><span class="hl-2">&#39;Purchased&#39;</span><span class="hl-1">, { </span><span class="hl-3">data:</span><span class="hl-1"> </span><span class="hl-3">encodedPurchasedColumn</span><span class="hl-1">, });</span><br/><br/><br/><span class="hl-0">//fit Columns, mutates dataset</span><br/><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">fitColumns</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-3">columns:</span><span class="hl-1">[</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">      </span><span class="hl-3">name:</span><span class="hl-1"> </span><span class="hl-2">&#39;Purchased&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">options:</span><span class="hl-1"> {</span><br/><span class="hl-1">        </span><span class="hl-3">strategy:</span><span class="hl-1"> </span><span class="hl-2">&#39;label&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">labelOptions:</span><span class="hl-1"> {</span><br/><span class="hl-1">          </span><span class="hl-3">binary:</span><span class="hl-1"> </span><span class="hl-7">true</span><span class="hl-1">,</span><br/><span class="hl-1">        },</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">      </span><span class="hl-3">name:</span><span class="hl-1"> </span><span class="hl-2">&#39;Country&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">options:</span><span class="hl-1"> {</span><br/><span class="hl-1">        </span><span class="hl-3">strategy:</span><span class="hl-1"> </span><span class="hl-2">&#39;onehot&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">  ]</span><br/><span class="hl-1">});</span>
+</code></pre>
+
+<a href="#python-2" id="python-2" style="color: inherit; text-decoration: none;">
+  <h5>Python</h5>
+</a>
+<pre><code class="language-python"><span class="hl-0"># Encoding  categorical data</span><br/><span class="hl-6">from</span><span class="hl-1"> sklearn.preprocessing </span><span class="hl-6">import</span><span class="hl-1"> LabelEncoder, OneHotEncoder</span><br/><span class="hl-1">labelencoder_X = LabelEncoder()</span><br/><span class="hl-1">X[:, </span><span class="hl-9">0</span><span class="hl-1">] = labelencoder_X.fit_transform(X[:, </span><span class="hl-9">0</span><span class="hl-1">])</span><br/><span class="hl-1">onehotencoder = OneHotEncoder(</span><span class="hl-3">categorical_features</span><span class="hl-1">=[</span><span class="hl-9">0</span><span class="hl-1">])</span><br/><span class="hl-1">X = onehotencoder.fit_transform(X).toarray()</span><br/><span class="hl-1">labelencoder_y = LabelEncoder()</span><br/><span class="hl-1">y = labelencoder_y.fit_transform(y)</span>
+</code></pre>
+
+<a href="#r-2" id="r-2" style="color: inherit; text-decoration: none;">
+  <h5>R</h5>
+</a>
+<pre><code class="language-R"><span class="hl-0"># Encoding categorical data</span><br/><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Country</span><span class="hl-1"> = </span><span class="hl-5">factor</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Country</span><span class="hl-1">,</span><br/><span class="hl-1">                         </span><span class="hl-3">levels</span><span class="hl-1"> = </span><span class="hl-5">c</span><span class="hl-1">(</span><span class="hl-2">&#39;Brazil&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;Mexico&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;Ghana&#39;</span><span class="hl-1">),</span><br/><span class="hl-1">                         </span><span class="hl-3">labels</span><span class="hl-1"> = </span><span class="hl-5">c</span><span class="hl-1">(</span><span class="hl-9">1</span><span class="hl-1">, </span><span class="hl-9">2</span><span class="hl-1">, </span><span class="hl-9">3</span><span class="hl-1">))</span><br/><br/><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Purchased</span><span class="hl-1"> = </span><span class="hl-5">factor</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Purchased</span><span class="hl-1">,</span><br/><span class="hl-1">                         </span><span class="hl-3">levels</span><span class="hl-1"> = </span><span class="hl-5">c</span><span class="hl-1">(</span><span class="hl-2">&#39;No&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;Yes&#39;</span><span class="hl-1">),</span><br/><span class="hl-1">                         </span><span class="hl-3">labels</span><span class="hl-1"> = </span><span class="hl-5">c</span><span class="hl-1">(</span><span class="hl-9">0</span><span class="hl-1">, </span><span class="hl-9">1</span><span class="hl-1">))</span>
+</code></pre>
+
+<a href="#cross-validation" id="cross-validation" style="color: inherit; text-decoration: none;">
+  <h4>Cross Validation</h4>
+</a>
+
+<a href="#javascript-3" id="javascript-3" style="color: inherit; text-decoration: none;">
+  <h5>Javascript</h5>
+</a>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">testArray</span><span class="hl-1"> = [</span><span class="hl-9">20</span><span class="hl-1">, </span><span class="hl-9">25</span><span class="hl-1">, </span><span class="hl-9">10</span><span class="hl-1">, </span><span class="hl-9">33</span><span class="hl-1">, </span><span class="hl-9">50</span><span class="hl-1">, </span><span class="hl-9">42</span><span class="hl-1">, </span><span class="hl-9">19</span><span class="hl-1">, </span><span class="hl-9">34</span><span class="hl-1">, </span><span class="hl-9">90</span><span class="hl-1">, </span><span class="hl-9">23</span><span class="hl-1">, ];</span><br/><br/><span class="hl-0">// { train: [ 50, 20, 34, 33, 10, 23, 90, 42 ], test: [ 25, 19 ] }</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">trainTestSplit</span><span class="hl-1"> = </span><span class="hl-3">ms</span><span class="hl-1">.</span><span class="hl-3">cross_validation</span><span class="hl-1">.</span><span class="hl-5">train_test_split</span><span class="hl-1">(</span><span class="hl-3">testArray</span><span class="hl-1">,{ </span><span class="hl-3">test_size:</span><span class="hl-9">0.2</span><span class="hl-1">, </span><span class="hl-3">random_state:</span><span class="hl-1"> </span><span class="hl-9">0</span><span class="hl-1">, });</span><br/><br/><span class="hl-0">// [ [ 50, 20, 34, 33, 10 ], [ 23, 90, 42, 19, 25 ] ] </span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">crossValidationArrayKFolds</span><span class="hl-1"> = </span><span class="hl-3">ms</span><span class="hl-1">.</span><span class="hl-3">cross_validation</span><span class="hl-1">.</span><span class="hl-5">cross_validation_split</span><span class="hl-1">(</span><span class="hl-3">testArray</span><span class="hl-1">, { </span><span class="hl-3">folds:</span><span class="hl-1"> </span><span class="hl-9">2</span><span class="hl-1">, </span><span class="hl-3">random_state:</span><span class="hl-1"> </span><span class="hl-9">0</span><span class="hl-1">, });</span>
+</code></pre>
+
+<a href="#python-3" id="python-3" style="color: inherit; text-decoration: none;">
+  <h5>Python</h5>
+</a>
+<pre><code class="language-python"><span class="hl-0">#splitting the dataset into trnaing set and test set</span><br/><span class="hl-6">from</span><span class="hl-1"> sklearn.cross_validation </span><span class="hl-6">import</span><span class="hl-1"> train_test_split</span><br/><span class="hl-1">X_train, X_test, y_train, y_test = train_test_split(X, y, </span><span class="hl-3">test_size</span><span class="hl-1"> = </span><span class="hl-9">0.2</span><span class="hl-1">, </span><span class="hl-3">random_state</span><span class="hl-1"> = </span><span class="hl-9">0</span><span class="hl-1">)</span>
+</code></pre>
+
+<a href="#r-3" id="r-3" style="color: inherit; text-decoration: none;">
+  <h5>R</h5>
+</a>
+<pre><code class="language-R"><span class="hl-0"># Splitting the dataset into the training set and test set</span><br/><span class="hl-5">library</span><span class="hl-1">(</span><span class="hl-3">caTools</span><span class="hl-1">)</span><br/><span class="hl-5">set.seed</span><span class="hl-1">(</span><span class="hl-9">1</span><span class="hl-1">)</span><br/><span class="hl-3">split</span><span class="hl-1"> = </span><span class="hl-3">sample.split</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-7">$</span><span class="hl-3">Purchased</span><span class="hl-1">, </span><span class="hl-3">SplitRatio</span><span class="hl-1"> = </span><span class="hl-9">0.8</span><span class="hl-1">)</span><br/><span class="hl-3">training_set</span><span class="hl-1"> = </span><span class="hl-5">subset</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-1">, </span><span class="hl-3">split</span><span class="hl-1"> == </span><span class="hl-7">TRUE</span><span class="hl-1">)</span><br/><span class="hl-3">test_set</span><span class="hl-1"> = </span><span class="hl-5">subset</span><span class="hl-1">(</span><span class="hl-3">dataset</span><span class="hl-1">, </span><span class="hl-3">split</span><span class="hl-1"> == </span><span class="hl-7">FALSE</span><span class="hl-1">)</span>
+</code></pre>
+
+<a href="#scaling-z-score--min-mix" id="scaling-z-score--min-mix" style="color: inherit; text-decoration: none;">
+  <h4>Scaling (z-score / min-mix)</h4>
+</a>
+
+<a href="#javascript-4" id="javascript-4" style="color: inherit; text-decoration: none;">
+  <h5>Javascript</h5>
+</a>
+<pre><code class="language-javascript"><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">columnArray</span><span class="hl-1">(</span><span class="hl-2">&#39;Salary&#39;</span><span class="hl-1">,{ </span><span class="hl-3">scale:</span><span class="hl-2">&#39;standard&#39;</span><span class="hl-1">}); </span><br/><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">columnArray</span><span class="hl-1">(</span><span class="hl-2">&#39;Salary&#39;</span><span class="hl-1">,{ </span><span class="hl-3">scale:</span><span class="hl-2">&#39;minmax&#39;</span><span class="hl-1">}); </span>
+</code></pre>
+
+<a href="#python-4" id="python-4" style="color: inherit; text-decoration: none;">
+  <h5>Python</h5>
+</a>
+<pre><code class="language-python"><span class="hl-6">from</span><span class="hl-1"> sklearn.preprocessing </span><span class="hl-6">import</span><span class="hl-1"> StandardScaler</span><br/><span class="hl-1">sc_X = StandardScaler()</span><br/><span class="hl-1">X_train = sc_X.fit_transform(X_train)</span><br/><span class="hl-1">X_test = sc_X.transform(X_test)</span>
+</code></pre>
+
+<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+  <h3>Notes</h3>
+</a>
+<p>Check out <a href="https://repetere.github.io/modelscript">https://repetere.github.io/modelscript</a> for the full modelscript Documentation</p>
+
+<a href="#a-quick-word-about-asynchronous-javascript" id="a-quick-word-about-asynchronous-javascript" style="color: inherit; text-decoration: none;">
+  <h4>A quick word about asynchronous JavaScript</h4>
+</a>
+<p>Most machine learning tutorials in Python and R are not using their asynchronous equivalents; however, there is a bias in JavaScript to default to non-blocking operations.</p>
+<p>With the advent of ES7 and Node.js 7+ there are syntax helpers with asynchronous functions. It may be easier to use async/await in JS if you want an approximation close to what a workflow would look like in R/Python</p>
+<pre><code class="language-javascript"><span class="hl-6">import</span><span class="hl-1"> </span><span class="hl-7">*</span><span class="hl-1"> </span><span class="hl-6">as</span><span class="hl-1"> </span><span class="hl-3">fs</span><span class="hl-1"> </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;fs-extra&#39;</span><span class="hl-1">;</span><br/><span class="hl-6">import</span><span class="hl-1"> </span><span class="hl-7">*</span><span class="hl-1"> </span><span class="hl-6">as</span><span class="hl-1"> </span><span class="hl-3">np</span><span class="hl-1"> </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;numjs&#39;</span><span class="hl-1">; </span><br/><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-6">default</span><span class="hl-1"> </span><span class="hl-6">as</span><span class="hl-1"> </span><span class="hl-3">ml</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;ml&#39;</span><span class="hl-1">;</span><br/><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-6">default</span><span class="hl-1"> </span><span class="hl-6">as</span><span class="hl-1"> </span><span class="hl-3">pd</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;pandas-js&#39;</span><span class="hl-1">;</span><br/><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-6">default</span><span class="hl-1"> </span><span class="hl-6">as</span><span class="hl-1"> </span><span class="hl-3">mpn</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;matplotnode&#39;</span><span class="hl-1">;</span><br/><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-3">loadCSV</span><span class="hl-1">, </span><span class="hl-3">preprocessing</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;modelscript&#39;</span><span class="hl-1">;</span><br/><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">plt</span><span class="hl-1"> = </span><span class="hl-3">mpn</span><span class="hl-1">.</span><span class="hl-3">plot</span><span class="hl-1">;</span><br/><br/><span class="hl-7">void</span><span class="hl-1"> </span><span class="hl-7">async</span><span class="hl-1"> () </span><span class="hl-7">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">csvData</span><span class="hl-1"> = </span><span class="hl-6">await</span><span class="hl-1"> </span><span class="hl-5">loadCSV</span><span class="hl-1">(</span><span class="hl-2">&#39;../Data.csv&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">rawData</span><span class="hl-1"> = </span><span class="hl-7">new</span><span class="hl-1"> </span><span class="hl-3">preprocessing</span><span class="hl-1">.</span><span class="hl-5">DataSet</span><span class="hl-1">(</span><span class="hl-3">csvData</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">fittedData</span><span class="hl-1"> = </span><span class="hl-3">rawData</span><span class="hl-1">.</span><span class="hl-5">fitColumns</span><span class="hl-1">({</span><br/><span class="hl-1">    </span><span class="hl-3">columns:</span><span class="hl-1"> [</span><br/><span class="hl-1">      { </span><span class="hl-3">name:</span><span class="hl-1"> </span><span class="hl-2">&#39;Age&#39;</span><span class="hl-1"> },</span><br/><span class="hl-1">      { </span><span class="hl-3">name:</span><span class="hl-1"> </span><span class="hl-2">&#39;Salary&#39;</span><span class="hl-1"> },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">        </span><span class="hl-3">name:</span><span class="hl-1"> </span><span class="hl-2">&#39;Purchased&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-3">options:</span><span class="hl-1"> {</span><br/><span class="hl-1">          </span><span class="hl-3">strategy:</span><span class="hl-1"> </span><span class="hl-2">&#39;label&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">          </span><span class="hl-3">labelOptions:</span><span class="hl-1"> {</span><br/><span class="hl-1">            </span><span class="hl-3">binary:</span><span class="hl-1"> </span><span class="hl-7">true</span><span class="hl-1">,</span><br/><span class="hl-1">          },</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">    ]</span><br/><span class="hl-1">  });</span><br/><span class="hl-1">  </span><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">dataset</span><span class="hl-1"> = </span><span class="hl-7">new</span><span class="hl-1"> </span><span class="hl-3">pd</span><span class="hl-1">.</span><span class="hl-5">DataFrame</span><span class="hl-1">(</span><span class="hl-3">fittedData</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">X</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">iloc</span><span class="hl-1">(</span><br/><span class="hl-1">    [ </span><span class="hl-9">0</span><span class="hl-1">, </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-3">length</span><span class="hl-1"> ],</span><br/><span class="hl-1">    [ </span><span class="hl-9">0</span><span class="hl-1">, </span><span class="hl-9">3</span><span class="hl-1"> ]).</span><span class="hl-3">values</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-7">const</span><span class="hl-1"> </span><span class="hl-8">y</span><span class="hl-1"> = </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-5">iloc</span><span class="hl-1">(</span><br/><span class="hl-1">    [ </span><span class="hl-9">0</span><span class="hl-1">, </span><span class="hl-3">dataset</span><span class="hl-1">.</span><span class="hl-3">length</span><span class="hl-1"> ],</span><br/><span class="hl-1">    </span><span class="hl-9">3</span><span class="hl-1">).</span><span class="hl-3">values</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-3">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">({</span><br/><span class="hl-1">    </span><span class="hl-3">X</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-3">y</span><br/><span class="hl-1">  });</span><br/><span class="hl-1">}();</span><br/>
+</code></pre>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">@jsonstack/data</a>
+<ul></ul></li>
+<li class="tsd-kind-namespace tsd-is-external"><a href="modules/PD.html">PD</a></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-class"><a href="classes/DataSet.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg>Data<wbr/>Set</a></li>
+<li class="tsd-kind-variable"><a href="variables/calc.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-variable)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-32-path"></rect><path d="M11.106 16L8.85 7.24H9.966L11.454 13.192C11.558 13.608 11.646 13.996 11.718 14.356C11.79 14.708 11.842 14.976 11.874 15.16C11.906 14.976 11.954 14.708 12.018 14.356C12.09 13.996 12.178 13.608 12.282 13.192L13.758 7.24H14.85L12.582 16H11.106Z" fill="var(--color-text)" id="icon-32-text"></path></svg>calc</a></li>
+<li class="tsd-kind-variable"><a href="variables/cross_validation.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>cross_<wbr/>validation</a></li>
+<li class="tsd-kind-variable"><a href="variables/csv.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>csv</a></li>
+<li class="tsd-kind-variable"><a href="variables/nlp.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>nlp</a></li>
+<li class="tsd-kind-variable"><a href="variables/util.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>util</a></li></ul></nav></div></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>

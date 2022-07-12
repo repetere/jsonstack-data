@@ -2,17 +2,15 @@
   "name": "@jsonstack/data",
   "version": "1.1.3",
   "description": "jsonstack data is a TypeScript module with simple and efficient tools for data mining and data analysis in TypeScript. When jsonstack data used with ML.js, pandas-js, and numjs, you're left with the equivalent R/Python tool set in TypeScript.",
-  "main": "dist/index.cjs.js",
-  "cjs": "dist/index.cjs.js",
-  "module": "build/index.js",
-  "esm": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
-  "web": "dist/index.web.js",
-  "modules.root": "build",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/web/index.js",
+  "web": "dist/web/web.js",
+  "modules.root": "dist/esm",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/repetere/jsonm-data.git"
+    "url": "git+https://github.com/repetere/jsonstack-data.git"
   },
   "author": {
     "name": "Yaw Joseph Etse",
@@ -34,16 +32,17 @@
     "numpy"
   ],
   "bugs": {
-    "url": "https://github.com/repetere/jsonm-data/issues"
+    "url": "https://github.com/repetere/jsonstack-data/issues"
   },
-  "homepage": "https://github.com/repetere/jsonm-data#readme",
+  "homepage": "https://github.com/repetere/jsonstack-data#readme",
   "scripts": {
-    "dev": "rollup -c -w",
+    "dev": "node esbuild.config.js -w",
+    "esbuild": "node esbuild.config.js",
     "benchmark": "node -r esm  benchmark/main_bmrk.js",
     "test": "jest --coverage",
     "doc": "tsc && typedoc && sitedown manual/ -b docs/manual",
-    "compile": "tsc",
-    "build": "tsc && rollup -c && typedoc && sitedown manual/ -b docs/manual",
+    "compile": "node esbuild.config.js",
+    "build": "tsc && typedoc && sitedown manual/ -b docs/manual",
     "coverage": "coveralls"
   },
   "dependencies": {
@@ -60,56 +59,53 @@
     "valid-url": "^1.0.9"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
-    "@rollup/plugin-alias": "^3.1.2",
-    "@rollup/plugin-commonjs": "^19.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "@rollup/plugin-replace": "^2.4.2",
-    "@rollup/plugin-sucrase": "^3.1.0",
-    "@rollup/plugin-typescript": "^8.2.1",
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/commit-analyzer": "8.0.1",
-    "@semantic-release/git": "9.0.0",
-    "@semantic-release/npm": "7.1.3",
-    "@semantic-release/release-notes-generator": "9.0.2",
-    "@types/jest": "^26.0.22",
-    "@types/lodash.range": "3.2.6",
-    "@types/lodash.rangeright": "4.2.6",
-    "@types/natural": "^2.1.1",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/jest": "^28.1.4",
+    "@types/lodash.range": "^3.2.7",
+    "@types/lodash.rangeright": "^4.2.7",
+    "@types/natural": "^5.1.1",
     "@types/probability-distributions": "0.1.0",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
-    "@types/stemmer": "1.0.2",
+    "@types/stemmer": "^2.0.0",
     "@types/valid-url": "1.0.3",
-    "husky": "^6.0.0",
+    "esbuild": "^0.14.47",
+    "esbuild-node-builtins": "^0.1.0",
+    "husky": "^8.0.1",
     "install": "0.13.0",
-    "jest": "^26.6.3",
+    "jest": "^28.1.2",
     "ml-cart": "^2.0.2",
     "ml-knn": "3.0.0",
     "ml-random-forest": "^2.0.2",
     "ml-regression-multivariate-linear": "2.0.3",
-    "puppeteer": "^9.0.0",
-    "rollup": "^2.44.0",
-    "rollup-plugin-node-builtins": "2.1.2",
-    "rollup-plugin-node-globals": "1.4.0",
-    "rollup-plugin-node-polyfills": "0.2.1",
-    "rollup-plugin-terser-js": "1.0.2",
+    "puppeteer": "^15.3.2",
     "stemmer": "1.0.5",
-    "ts-jest": "^26.5.4",
+    "ts-jest": "^28.0.5",
     "tslib": "^2.1.0",
-    "typedoc": "^0.20.34",
-    "typescript": "^4.2.3",
+    "typedoc": "^0.23.7",
+    "typescript": "^4.7.4",
     "underscore": "^1.12.1"
   },
   "jest": {
-    "testEnvironment": "node",
     "preset": "ts-jest",
     "globals": {
       "ts-jest": {
-        "diagnostics": false
+        "extensionsToTreatAsEsm": [
+          ".ts",
+          ".js"
+        ],
+        "useESM": true,
+        "diagnostics": false,
+        "tsconfig": "tsconfig.jest.json"
       }
-    }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/?!(scikitjs)"
+    ]
   },
   "commitlint": {
     "extends": [
@@ -146,7 +142,7 @@
             },
             {
               "type": "refactor",
-              "release": "patch"
+              "release": "major"
             },
             {
               "type": "style",
@@ -155,6 +151,7 @@
           ],
           "parserOpts": {
             "noteKeywords": [
+              "breaking",
               "BREAKING CHANGE",
               "BREAKING CHANGES"
             ]
