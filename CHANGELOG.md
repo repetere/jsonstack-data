@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/repetere/jsonstack-data/compare/v2.0.0...v2.0.1) (2022-07-30)
+
+
+### Bug Fixes
+
+* browser build ([55c62ed](https://github.com/repetere/jsonstack-data/commit/55c62ed26ebb4c90888a5a080b6da1fc208453d3))
+
 # [2.0.0](https://github.com/repetere/jsonstack-data/compare/v1.1.3...v2.0.0) (2022-07-12)
 
 ## [1.1.3](https://github.com/repetere/jsonm-data/compare/v1.1.2...v1.1.3) (2021-04-17)

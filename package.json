@@ -1,6 +1,6 @@
 {
   "name": "@jsonstack/data",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "jsonstack data is a TypeScript module with simple and efficient tools for data mining and data analysis in TypeScript. When jsonstack data used with ML.js, pandas-js, and numjs, you're left with the equivalent R/Python tool set in TypeScript.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
