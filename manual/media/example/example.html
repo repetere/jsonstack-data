@@ -6,7 +6,7 @@
     // const async_hooks={}
     // const require$$0={}
     </script>
-    <script src="../../../dist/index.web.js"></script>
+    <script src="../../../dist/web/index.js"></script>
     <style type="text/css">
     .result{
       border:1px solid black;
@@ -27,26 +27,26 @@
   </head>
   <body>
     <h1>Data Test</h1>
-    <h2>CSV Tests - ModelXData.csv.loadCSVURI </h2>
-    <pre>ModelXData.csv.loadCSVURI('https://raw.githubusercontent.com/repetere/modelscript/master/test/mock/data.csv')</pre>
+    <h2>CSV Tests - JSONStackData.csv.loadCSVURI </h2>
+    <pre>JSONStackData.csv.loadCSVURI('https://raw.githubusercontent.com/repetere/modelscript/master/test/mock/data.csv')</pre>
     <script>
       window.addEventListener('load',()=>{
         const csvtest1Main = (async function csvtest1Main(){
           const csvtest1DOM= setLoadingDom('#csvtest1');
-          cacheData.csvtest1 = await ModelXData.csv.loadCSVURI('https://raw.githubusercontent.com/repetere/modelscript/master/test/mock/data.csv');
+          cacheData.csvtest1 = await JSONStackData.csv.loadCSVURI('https://raw.githubusercontent.com/repetere/modelscript/master/test/mock/data.csv');
           updateLoadingDom(csvtest1DOM,cacheData.csvtest1);
         })();
       });
     </script>
     <pre id='csvtest1' class="result">loading</pre>
     <h2>DataSet Tests</h2>
-    <h3>ModelXData.getBinaryValue</h3>
+    <h3>JSONStackData.getBinaryValue</h3>
     <pre>
-      const CSVDataSet = new ModelXData.DataSet(csvData, { debug: false, }); 
+      const CSVDataSet = new JSONStackData.DataSet(csvData, { debug: false, }); 
       CSVDataSet.filterColumn(row => row.Salary.toString() === '83000'))
     </pre>
     <pre id='csvtest2' class="result">loading</pre>
-    <h3>ModelXData.DataSet.selectColumns</h3>
+    <h3>JSONStackData.DataSet.selectColumns</h3>
     <pre>
       const cols = ['Age', 'Salary', ];
       const selectedCols = CSVDataSet.selectColumns(cols);
@@ -57,8 +57,8 @@
       window.addEventListener('load',()=>{
         (async function csvtest1Main(){
           const csvtest2DOM= setLoadingDom('#csvtest2');
-          cacheData.csvtest2 = await ModelXData.csv.loadCSVURI('https://raw.githubusercontent.com/repetere/modelscript/master/test/mock/data.csv');
-          const CSVDataSet = new ModelXData.DataSet(cacheData.csvtest2, { debug: false, });
+          cacheData.csvtest2 = await JSONStackData.csv.loadCSVURI('https://raw.githubusercontent.com/repetere/modelscript/master/test/mock/data.csv');
+          const CSVDataSet = new JSONStackData.DataSet(cacheData.csvtest2, { debug: false, });
           updateLoadingDom(csvtest2DOM, CSVDataSet.filterColumn(row => row.Salary.toString() === '83000'));
 
           const csvtest3DOM= setLoadingDom('#csvtest3');
@@ -68,8 +68,8 @@
         })();
       });
     </script>
-    <h2>ModelXData.nlp</h2>
-    <h3>ModelXData.nlp.ColumnVectorizer</h3>
+    <h2>JSONStackData.nlp</h2>
+    <h3>JSONStackData.nlp.ColumnVectorizer</h3>
     <pre>
 const csvData = [
   {
@@ -114,8 +114,8 @@ const csvData = [
   },
 ];
 const eVString = 'I would rate everything Great, views Great, food Great';
-const CSVDataSet = new ModelXData.DataSet(csvData);
-const nlpVectors = new ModelXData.nlp.ColumnVectorizer({
+const CSVDataSet = new JSONStackData.DataSet(csvData);
+const nlpVectors = new JSONStackData.nlp.ColumnVectorizer({
   data: CSVDataSet.columnArray('Review'),
   maxFeatures: 9,
 });
@@ -170,8 +170,8 @@ nlpVectors.fit_transform();
             },
           ];
           const eVString = 'I would rate everything Great, views Great, food Great';
-          const CSVDataSet = new ModelXData.DataSet(csvData);
-          const nlpVectors = new ModelXData.nlp.ColumnVectorizer({
+          const CSVDataSet = new JSONStackData.DataSet(csvData);
+          const nlpVectors = new JSONStackData.nlp.ColumnVectorizer({
             data: CSVDataSet.columnArray('Review'),
             maxFeatures: 9,
           });
@@ -185,11 +185,11 @@ nlpVectors.fit_transform();
         })();
       });
     </script>
-    <h2>ModelXData.cross_validation</h2>
-    <h3>ModelXData.cross_validation.train_test_split</h3>
+    <h2>JSONStackData.cross_validation</h2>
+    <h3>JSONStackData.cross_validation.train_test_split</h3>
     <pre>
       const testArray = [20, 25, 10, 33, 50, 42, 19, 34, 90, 23, ];
-      const defaultTrainTestSplitSize = ModelXData.cross_validation.train_test_split(testArray, { test_size: 0.4, });
+      const defaultTrainTestSplitSize = JSONStackData.cross_validation.train_test_split(testArray, { test_size: 0.4, });
       const { train, test, } = defaultTrainTestSplitSize;
       expect(train.length).to.equal(6);
     </pre>
@@ -198,7 +198,7 @@ nlpVectors.fit_transform();
         (async function csvtest1Main(){
           const csvtest5DOM= setLoadingDom('#csvtest5');
           const testArray = [20, 25, 10, 33, 50, 42, 19, 34, 90, 23, ];
-          const defaultTrainTestSplitSize = ModelXData.cross_validation.train_test_split(testArray, { test_size: 0.4, });
+          const defaultTrainTestSplitSize = JSONStackData.cross_validation.train_test_split(testArray, { test_size: 0.4, });
           const { train, test, } = defaultTrainTestSplitSize;
           updateLoadingDom(csvtest5DOM, { train, test, } );
 
@@ -206,8 +206,8 @@ nlpVectors.fit_transform();
       });
     </script>
     <pre id='csvtest5' class="result">loading</pre>
-    <h2>ModelXData.calc</h2>
-    <h3>ModelXData.calc.assocationRuleLearning</h3>
+    <h2>JSONStackData.calc</h2>
+    <h3>JSONStackData.calc.assocationRuleLearning</h3>
     <pre>
       const rawTransactions = [
         ['Cookies', 'Milk', 'Plates', ],
@@ -216,8 +216,8 @@ nlpVectors.fit_transform();
         ['Cups', 'Silverware', ],
         ['Cookies', 'Cups', 'Milk', 'Silverware', ],
       ];
-      const gt = ModelXData.calc.getTransactions(rawTransactions);
-      const arl = await ModelXData.calc.assocationRuleLearning(gt.transactions, {
+      const gt = JSONStackData.calc.getTransactions(rawTransactions);
+      const arl = await JSONStackData.calc.assocationRuleLearning(gt.transactions, {
         valuesMap: gt.valuesMap,
       });
     </pre>
@@ -232,8 +232,8 @@ nlpVectors.fit_transform();
             ['Cups', 'Silverware', ],
             ['Cookies', 'Cups', 'Milk', 'Silverware', ],
           ];
-          const gt = ModelXData.calc.getTransactions(rawTransactions);
-          const arl = await ModelXData.calc.assocationRuleLearning(gt.transactions, {
+          const gt = JSONStackData.calc.getTransactions(rawTransactions);
+          const arl = await JSONStackData.calc.assocationRuleLearning(gt.transactions, {
             valuesMap: gt.valuesMap,
           });
           updateLoadingDom(csvtest6DOM, { gt, arl, } );

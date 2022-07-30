@@ -1,6 +1,7 @@
 import esbuild from "esbuild";
 import { nodeBuiltIns } from "esbuild-node-builtins";
 // import GlobalsPlugin from "esbuild-plugin-globals";
+import brode from '@geut/esbuild-plugin-brode'
 
 const watch = (process.argv.includes('-w') || process.argv.includes('-watch'))
   ? {
@@ -11,7 +12,7 @@ const watch = (process.argv.includes('-w') || process.argv.includes('-watch'))
   : false;
 const globalName = 'JSONStackData';
 const entryPoints = ['src/index.ts'];
-const webPlugins = [nodeBuiltIns()];
+const webPlugins = [nodeBuiltIns(),brode()];
 const webCorePlugins = webPlugins.concat([
   // GlobalsPlugin({
   //   react: "React",
